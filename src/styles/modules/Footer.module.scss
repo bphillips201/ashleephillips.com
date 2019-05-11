@@ -1,0 +1,13 @@
+@import "../partials/variables";
+
+.footer {
+  background: $black;
+  color: white;
+  padding: $base3X 0;
+}
+
+.copyright {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}

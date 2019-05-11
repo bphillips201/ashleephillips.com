@@ -10,3 +10,19 @@ $base: 8px;
 $base2X: $base * 2;
 $base3X: $base * 3;
 $base4X: $base * 4;
+
+$wrapper-width: 1100px;
+
+// Fonts
+
+$fonts-base: "Open Sans", Arial, Helvetica, sans-serif;
+$fonts-fancy: "Merriweather", Georgia, "Times New Roman", Times, serif;
+$fonts-app: "Poppins", "Open Sans", Arial, Helvetica, sans-serif;
+
+// Mixins
+
+@mixin alt-font($letter-spacing) {
+  font-family: $fonts-app;
+  text-transform: uppercase;
+  letter-spacing: #{$letter-spacing}px;
+}

@@ -1,5 +1,62 @@
 @import "../partials/variables";
 
-header {
-  padding: $base3X;
+.header {
+  padding: $base4X;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    margin-right: $base3X;
+  }
+}
+
+.nav {
+  @include alt-font(1);
+  margin: auto;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  li {
+    margin: 0 $base2X;
+  }
+
+  a {
+    color: $black;
+    padding: $base;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -$base;
+      left: 50%;
+      height: 3px;
+      background: $primary-color;
+      width: 0;
+      transition: left ease 200ms, width ease 200ms;
+    }
+
+    &:hover:after {
+      width: 110%;
+      left: -5%;
+    }
+  }
+}
+
+:global a.active::after {
+  width: 110%;
+  left: -5%;
 }

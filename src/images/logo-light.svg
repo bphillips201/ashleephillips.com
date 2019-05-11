@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="48px" viewBox="0 0 34 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>AP GRAPHIC</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HEADER/1" transform="translate(-34.000000, -21.000000)">
+            <g id="Header_Logo-LIGHT" transform="translate(35.000000, 21.000000)">
+                <g id="AP-GRAPHIC">
+                    <g id="LOGO">
+                        <path d="M13.3333333,32.9135802 C5.76609776,31.653059 0,25.118574 0,17.2469136 C0,9.37525316 5.76609776,2.84076819 13.3333333,1.58024691 L13.3333333,32.9135802 Z M18.6666667,1.58024691 C26.2339022,2.84076819 32,9.37525316 32,17.2469136 C32,25.118574 26.2339022,31.653059 18.6666667,32.9135802 L18.6666667,1.58024691 Z" id="Combined-Shape" stroke="#FBF7F3" stroke-width="1.5"></path>
+                        <polygon id="Path-2" fill="#FBF7F3" transform="translate(18.692344, 24.339856) scale(-1, 1) translate(-18.692344, -24.339856) " points="19.5846889 0.679711102 17.8 1.00952393 17.8 48 19.5846889 48"></polygon>
+                        <polygon id="Path-2" fill="#FBF7F3" points="14.3846889 0.630620308 12.6 0.97405128 12.6 38.7116592 14.3846889 38.7116592"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

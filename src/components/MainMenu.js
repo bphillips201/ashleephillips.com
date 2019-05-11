@@ -2,7 +2,7 @@ import React from "react"
 // import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
-import styles from "../styles/modules/Menu.module.scss"
+import styles from "../styles/modules/Header.module.scss"
 
 function MainMenu() {
   const { allWordpressWpApiMenusMenusItems } = useStaticQuery(
@@ -30,7 +30,9 @@ function MainMenu() {
       <ul>
         {items.map(item => (
           <li key={item.object_id}>
-            <Link to={item.object_slug}>{item.title}</Link>
+            <Link to={item.object_slug} activeClassName="active">
+              {item.title}
+            </Link>
           </li>
         ))}
       </ul>
