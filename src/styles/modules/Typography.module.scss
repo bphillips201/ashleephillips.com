@@ -1,0 +1,21 @@
+@import "../partials/variables";
+
+.sectionHeader {
+  @include alt-font(5);
+  text-align: center;
+
+  &:before,
+  &:after {
+    content: "•••";
+    color: $primary-color;
+    display: inline-block;
+  }
+
+  &:before {
+    margin-right: $base;
+  }
+
+  &:after {
+    margin-left: $base;
+  }
+}

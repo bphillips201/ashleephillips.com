@@ -1,0 +1,19 @@
+@import "../partials/variables";
+
+.button {
+  @include alt-font(1);
+  text-decoration: none;
+  padding: $base2X $base4X;
+  border: 2px solid $black;
+  border-radius: 4px;
+  color: $black;
+  display: inline-block;
+  margin: 0 $base2X $base2X 0;
+  cursor: pointer;
+}
+
+:global a.primary {
+  background-color: $primary-color;
+  color: white;
+  border-color: $primary-color;
+}

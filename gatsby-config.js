@@ -52,6 +52,7 @@ module.exports = {
         fonts: [
           {
             family: `Merriweather`,
+            variants: [`400`],
           },
           {
             family: `Open Sans`,

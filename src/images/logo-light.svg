@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="48px" viewBox="0 0 34 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>AP GRAPHIC</title>
+<svg width="42px" height="61px" viewBox="0 0 42 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>AP_GRAPHIC-DARK copy</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="HEADER/1" transform="translate(-34.000000, -21.000000)">
-            <g id="Header_Logo-LIGHT" transform="translate(35.000000, 21.000000)">
-                <g id="AP-GRAPHIC">
-                    <g id="LOGO">
-                        <path d="M13.3333333,32.9135802 C5.76609776,31.653059 0,25.118574 0,17.2469136 C0,9.37525316 5.76609776,2.84076819 13.3333333,1.58024691 L13.3333333,32.9135802 Z M18.6666667,1.58024691 C26.2339022,2.84076819 32,9.37525316 32,17.2469136 C32,25.118574 26.2339022,31.653059 18.6666667,32.9135802 L18.6666667,1.58024691 Z" id="Combined-Shape" stroke="#FBF7F3" stroke-width="1.5"></path>
-                        <polygon id="Path-2" fill="#FBF7F3" transform="translate(18.692344, 24.339856) scale(-1, 1) translate(-18.692344, -24.339856) " points="19.5846889 0.679711102 17.8 1.00952393 17.8 48 19.5846889 48"></polygon>
-                        <polygon id="Path-2" fill="#FBF7F3" points="14.3846889 0.630620308 12.6 0.97405128 12.6 38.7116592 14.3846889 38.7116592"></polygon>
-                    </g>
-                </g>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AP_GRAPHIC-DARK-copy" transform="translate(1.000000, 1.000000)">
+            <path d="M16.6666666,40.6779661 C7.2076222,39.0824272 0,30.8112255 0,20.8474577 C0,10.8836899 7.2076222,2.61248817 16.6666666,1.01694915 L16.6666666,40.6779661 Z M23.3333334,1.01694915 C32.7923777,2.61248817 40,10.8836899 40,20.8474577 C40,30.8112255 32.7923777,39.0824272 23.3333334,40.6779661 L23.3333334,1.01694915 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="2"></path>
+            <polygon id="Path-2" fill="#FFFFFF" fill-rule="nonzero" transform="translate(23.000000, 30.000000) scale(-1, 1) translate(-23.000000, -30.000000) " points="24 0 22 0.418187846 22 60 24 60"></polygon>
+            <polygon id="Path-2" fill="#FFFFFF" fill-rule="nonzero" points="18 0 16 0.440221397 16 48.8135593 18 48.8135593"></polygon>
         </g>
     </g>
 </svg>
