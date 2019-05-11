@@ -1,0 +1,52 @@
+@import "../partials/variables";
+
+.hero {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  //   &:before {
+  //     content: "";
+  //     background-color: $primary-color;
+  //     position: absolute;
+  //     top: 138px;
+  //     height: 4px;
+  //     width: 1600px;
+  //     left: 50%;
+  //     margin-left: -800px;
+  //   }
+
+  //   &:after {
+  //     content: "";
+  //     background-color: green;
+  //     position: absolute;
+  //     top: 138px;
+  //     height: 4px;
+  //     width: 4px;
+  //     left: 50%;
+  //     margin-left: -2px;
+  //   }
+}
+
+.banner {
+  height: 480px;
+  margin-right: -275px;
+  flex: 1.52;
+}
+
+.cta {
+  flex: 1;
+  z-index: 2;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8%;
+    width: 50%;
+    height: 100%;
+    background: white;
+    transform: skew(20deg);
+    z-index: -1;
+  }
+}
