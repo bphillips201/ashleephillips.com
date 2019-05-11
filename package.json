@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ashlee-velvet",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The 2019 build of Ashlee Phillips's website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Brian Phillips <hey@brianphillips.xyz>",
   "dependencies": {
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.0.41",
