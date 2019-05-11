@@ -4,7 +4,7 @@ import React from "react"
 import LogoIcon from "../images/logo.svg"
 
 import styles from "../styles/modules/Header.module.scss"
-import Menu from "./Menu"
+import MainMenu from "./MainMenu"
 
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
         <LogoIcon />
       </Link>
     </h1>
-    <Menu />
+    <MainMenu />
   </header>
 )
 

@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 import styles from "../styles/modules/Menu.module.scss"
 
-function Menu() {
+function MainMenu() {
   const { allWordpressWpApiMenusMenusItems } = useStaticQuery(
     graphql`
       query {
@@ -38,4 +38,4 @@ function Menu() {
   )
 }
 
-export default Menu
+export default MainMenu
