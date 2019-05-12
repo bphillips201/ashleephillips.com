@@ -13,22 +13,23 @@ const PostList = ({ postData }) => {
           {post.node.featured_media && (
             <Link to={post.node.path}>
               <Img
-                resolutions={
-                  post.node.featured_media.localFile.childImageSharp.resolutions
-                }
+                fluid={post.node.featured_media.localFile.childImageSharp.fluid}
+                objectFit="cover"
+                objectPosition="50% 50%"
+                alt={post.node.featured_media.alt_text}
               />
             </Link>
           )}
-          <div className="categories">
+          <div className={styles.categories}>
             <ul>
               {post.node.categories.map(cat => (
-                <li key={cat.id}>
-                  <Link to={`category/${cat.slug}`}>{cat.name}</Link>
-                </li>
+                <li key={cat.id}>{cat.name}</li>
               ))}
             </ul>
           </div>
-          <Link to={post.node.path}>{post.node.title}</Link>
+          <Link className={styles.postTitle} to={post.node.path}>
+            {post.node.title}
+          </Link>
         </li>
       ))}
     </ul>

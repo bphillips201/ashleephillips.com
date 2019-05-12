@@ -46,10 +46,8 @@ const IndexPage = () => (
                     alt_text
                     localFile {
                       childImageSharp {
-                        resolutions(width: 600, height: 360) {
+                        fluid {
                           src
-                          width
-                          height
                         }
                       }
                     }
@@ -57,7 +55,6 @@ const IndexPage = () => (
                   categories {
                     id
                     name
-                    slug
                   }
                 }
               }

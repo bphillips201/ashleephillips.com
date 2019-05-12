@@ -1,7 +1,51 @@
+@import "../partials/variables";
+
 .postList {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 2.33%;
+  justify-content: space-between;
   padding: 0;
+  margin: 0;
   list-style-type: none;
+
+  img {
+    margin-bottom: $base;
+  }
+}
+
+.categories {
+  @include alt-font(1);
+  margin-bottom: $base;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    margin-right: $base;
+
+    &:after {
+      content: "/";
+      margin-left: $base;
+    }
+
+    &:last-child:after {
+      content: "";
+      margin-left: 0;
+    }
+  }
+}
+
+.postTitle {
+  color: $black;
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  display: block;
 }

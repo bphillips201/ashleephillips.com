@@ -4,7 +4,12 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  p {
+    margin-bottom: $base3X * 2;
+  }
 
   //   &:before {
   //     content: "";

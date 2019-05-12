@@ -1,5 +1,6 @@
 body {
   font-family: $fonts-base;
+  color: $black;
 }
 
 h1,
@@ -10,4 +11,12 @@ h5,
 h6 {
   font-family: $fonts-fancy;
   font-weight: 400;
+}
+
+a {
+  color: $primary-color;
+}
+
+p {
+  line-height: 1.55;
 }
