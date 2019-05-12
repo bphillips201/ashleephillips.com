@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import SectionHeader from "../components/SectionHeader"
+import SEO from "../components/SEO"
 
 class PageTemplate extends Component {
   render() {
@@ -8,8 +10,13 @@ class PageTemplate extends Component {
 
     return (
       <Layout>
-        <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
-        <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
+        <SEO title={currentPage.title} />
+        <section className="shaded-section">
+          <div className="wrapper">
+            <SectionHeader text={currentPage.title} headerType="h1" />
+            <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
+          </div>
+        </section>
       </Layout>
     )
   }

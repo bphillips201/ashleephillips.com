@@ -3,6 +3,7 @@
 .sectionHeader {
   @include alt-font(5);
   text-align: center;
+  font-size: 1.67rem;
 
   &:before,
   &:after {
