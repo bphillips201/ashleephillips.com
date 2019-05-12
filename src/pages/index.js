@@ -28,8 +28,8 @@ const IndexPage = () => (
           speak about web accessbility and geek out over calligraphy and Bob’s
           Burgers.
         </p>
-        <LinkButton linkTo="/blog" buttonText="Read my Blog" />
-        <LinkButton linkTo="/" template="primary" buttonText="Subscribe" />
+        <LinkButton to="/blog" text="Read my Blog" />
+        <LinkButton to="/" template="primary" text="Subscribe" />
       </div>
 
       <BannerImage className={styles.banner} />
@@ -97,12 +97,22 @@ const IndexPage = () => (
         </a>
       </div>
 
-      {/* <LinkButton buttonText="View my Work" to="/work" template="primary" /> */}
+      <LinkButton
+        text="View my Work"
+        to="/work"
+        template="primary"
+        className={styles.workButton}
+      />
     </section>
 
     <section className={styles.newsletter}>
       <div className="wrapper">
         <h2>Come here often?</h2>
+        <p>
+          Subscribe to the newsletter for cool links, videos, and other
+          delightful pick-me-ups straight to your inbox like a perfectly-timed
+          email from your best friend every week.
+        </p>
       </div>
     </section>
   </Layout>

@@ -9,10 +9,10 @@ const templates = {
   default: "default",
 }
 
-const LinkButton = ({ buttonText, linkTo, template }) => {
+const LinkButton = ({ text, to, template, className }) => {
   return (
-    <Link to={linkTo} className={`${styles.button} ${template}`}>
-      <span dangerouslySetInnerHTML={{ __html: buttonText }} />
+    <Link to={to} className={`${className} ${styles.button} ${template}`}>
+      <span dangerouslySetInnerHTML={{ __html: text }} />
     </Link>
   )
 }
@@ -20,15 +20,17 @@ const LinkButton = ({ buttonText, linkTo, template }) => {
 LinkButton.templates = templates
 
 LinkButton.propTypes = {
-  buttonText: PropTypes.string.isRequired,
-  linkTo: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  to: PropTypes.string,
   template: PropTypes.oneOf(Object.keys(templates)),
+  className: PropTypes.string,
 }
 
 LinkButton.defaultProps = {
-  buttonText: ``,
-  linkTo: `/`,
+  text: ``,
+  to: `/`,
   template: `default`,
+  className: ``,
 }
 
 export default LinkButton
