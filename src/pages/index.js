@@ -1,11 +1,11 @@
 import React from "react"
-// import { Link } from "gatsby"
-// import PropTypes from "react"
+import { StaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 // import Image from "../components/Image"
 import SEO from "../components/SEO"
 import BannerImage from "../components/BannerImage"
+import PostList from "../components/PostList"
 
 import styles from "../styles/modules/Home.module.scss"
 import LinkButton from "../components/LinkButton"
@@ -32,6 +32,40 @@ const IndexPage = () => (
 
     <section className={`${styles.featuredPosts} wrapper`}>
       <SectionHeader text="The Blog" />
+      <StaticQuery
+        query={graphql`
+          query LatestPostsQuery {
+            allWordpressPost(limit: 3) {
+              edges {
+                node {
+                  id
+                  title
+                  path
+                  featured_media {
+                    id
+                    alt_text
+                    localFile {
+                      childImageSharp {
+                        resolutions(width: 600, height: 360) {
+                          src
+                          width
+                          height
+                        }
+                      }
+                    }
+                  }
+                  categories {
+                    id
+                    name
+                    slug
+                  }
+                }
+              }
+            }
+          }
+        `}
+        render={data => <PostList postData={data.allWordpressPost.edges} />}
+      />
     </section>
 
     <section className={styles.publishedIn}>
