@@ -51,7 +51,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Merriweather`,
+            family: `Prata`,
             variants: [`400`],
           },
           {

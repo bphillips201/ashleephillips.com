@@ -3,6 +3,10 @@
   padding-left: $base3X;
   padding-right: $base3X;
   margin: 0 auto;
+
+  &-thin {
+    max-width: $wrapper-thin-width;
+  }
 }
 
 section {
