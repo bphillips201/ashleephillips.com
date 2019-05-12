@@ -10,6 +10,11 @@ import PostList from "../components/PostList"
 import styles from "../styles/modules/Home.module.scss"
 import LinkButton from "../components/LinkButton"
 import SectionHeader from "../components/SectionHeader"
+import {
+  CoyoteOakLogo,
+  EdibleSLOLogo,
+  WeddingStandardLogo,
+} from "../components/Image"
 
 const IndexPage = () => (
   <Layout>
@@ -67,6 +72,38 @@ const IndexPage = () => (
 
     <section className={styles.publishedIn}>
       <SectionHeader text="Published In" />
+
+      <div className={`${styles.logoContainer} wrapper wrapper-thin`}>
+        <a
+          href="http://www.coyoteandoak.com/purchase"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CoyoteOakLogo />
+        </a>
+        <a
+          href="http://ediblesanluisobispo.ediblecommunities.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <EdibleSLOLogo />
+        </a>
+        <a
+          href="https://www.theweddingstandard.com/magazine/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <WeddingStandardLogo />
+        </a>
+      </div>
+
+      {/* <LinkButton buttonText="View my Work" to="/work" template="primary" /> */}
+    </section>
+
+    <section className={styles.newsletter}>
+      <div className="wrapper">
+        <h2>Come here often?</h2>
+      </div>
     </section>
   </Layout>
 )

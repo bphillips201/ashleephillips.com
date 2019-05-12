@@ -13,20 +13,45 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
+function withImageData(WrappedComponent) {
+  return props => (
+    <StaticQuery
+      query={graphql`
+        query {
+          coyoteOak: file(relativePath: { eq: "coyote-oak.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          weddingStandard: file(relativePath: { eq: "wedding-standard.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          edibleSLO: file(relativePath: { eq: "edible-slo.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
-      }
-    `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
-export default Image
+      `}
+      render={data => <WrappedComponent {...props} imageData={data} />}
+    />
+  )
+}
+
+export const CoyoteOakLogo = withImageData(props => (
+  <Img fluid={props.imageData.coyoteOak.childImageSharp.fluid} />
+))
+export const WeddingStandardLogo = withImageData(props => (
+  <Img fluid={props.imageData.weddingStandard.childImageSharp.fluid} />
+))
+export const EdibleSLOLogo = withImageData(props => (
+  <Img fluid={props.imageData.edibleSLO.childImageSharp.fluid} />
+))
