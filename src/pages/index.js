@@ -107,12 +107,68 @@ const IndexPage = () => (
 
     <section className={styles.newsletter}>
       <div className="wrapper">
-        <h2>Come here often?</h2>
-        <p>
-          Subscribe to the newsletter for cool links, videos, and other
-          delightful pick-me-ups straight to your inbox like a perfectly-timed
-          email from your best friend every week.
-        </p>
+        <div className="newsletter-cta">
+          <h2>Come here often?</h2>
+          <p>
+            Subscribe to the newsletter for cool links, videos, and pick-me-ups
+            delivered straight to your inbox. It's like a perfectly-timed email
+            from your best friend.
+          </p>
+        </div>
+
+        <div className="newsletter-signup">
+          <form
+            action="https://ashleephillips.us16.list-manage.com/subscribe/post?u=b111261bf5148bbfcf26596f6&amp;id=538876a268"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <label for="mce-EMAIL">What's Your Email?</label>
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              class="required email"
+              id="mce-EMAIL"
+              placeholder="Email address..."
+            />
+
+            <div
+              class="response"
+              id="mce-error-response"
+              style={{ display: "none" }}
+            />
+            <div
+              class="response"
+              id="mce-success-response"
+              style={{ display: "none" }}
+            />
+
+            <div
+              style={{ position: "absolute", left: "-5000px" }}
+              aria-hidden="true"
+            >
+              <input
+                type="text"
+                name="b_b111261bf5148bbfcf26596f6_538876a268"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <div class="clear">
+              <input
+                type="submit"
+                value="Subscribe"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="button"
+              />
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </Layout>
