@@ -122,27 +122,27 @@ const IndexPage = () => (
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
-            class="validate"
+            className="validate"
             target="_blank"
-            novalidate
+            noValidate
           >
-            <label for="mce-EMAIL">What's Your Email?</label>
+            <label htmlFor="mce-EMAIL">What's Your Email?</label>
             <input
               type="email"
-              value=""
+              defaultValue=""
               name="EMAIL"
-              class="required email"
+              className="required email"
               id="mce-EMAIL"
               placeholder="Email address..."
             />
 
             <div
-              class="response"
+              className="response"
               id="mce-error-response"
               style={{ display: "none" }}
             />
             <div
-              class="response"
+              className="response"
               id="mce-success-response"
               style={{ display: "none" }}
             />
@@ -154,17 +154,17 @@ const IndexPage = () => (
               <input
                 type="text"
                 name="b_b111261bf5148bbfcf26596f6_538876a268"
-                tabindex="-1"
-                value=""
+                tabIndex="-1"
+                defaultValue=""
               />
             </div>
-            <div class="clear">
+            <div className="clear">
               <input
                 type="submit"
-                value="Subscribe"
+                defaultValue="Subscribe"
                 name="subscribe"
                 id="mc-embedded-subscribe"
-                class="button"
+                className="button"
               />
             </div>
           </form>

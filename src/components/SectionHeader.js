@@ -4,14 +4,14 @@ import PropTypes from "prop-types"
 import { sectionHeader } from "../styles/modules/Typography.module.scss"
 
 const headerTypes = {
-  H1: "h1",
-  H3: "h3",
+  h1: "h1",
+  h3: "h3",
 }
 
 const SectionHeader = ({ text, headerType }) => {
   return (
     <div>
-      {headerType === headerTypes.H1 ? (
+      {headerType === headerTypes.h1 ? (
         <h1 className={sectionHeader}>
           <span dangerouslySetInnerHTML={{ __html: text }} />
         </h1>

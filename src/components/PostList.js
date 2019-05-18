@@ -23,12 +23,15 @@ const PostList = ({ postData }) => {
           <div className={styles.categories}>
             <ul>
               {post.node.categories.map(cat => (
-                <li key={cat.id}>{cat.name}</li>
+                <li
+                  key={cat.id}
+                  dangerouslySetInnerHTML={{ __html: cat.name }}
+                />
               ))}
             </ul>
           </div>
           <Link className={styles.postTitle} to={post.node.path}>
-            {post.node.title}
+            <span dangerouslySetInnerHTML={{ __html: post.node.title }} />
           </Link>
         </li>
       ))}
