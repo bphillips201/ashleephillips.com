@@ -31,8 +31,8 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // your wordpress source
-        baseUrl: `ashlee.lerapress.com`,
-        protocol: `http`,
+        baseUrl: `ashleephillips.com`,
+        protocol: `https`,
         // is it hosted on wordpress.com, or self-hosted?
         hostingWPCOM: false,
         // does your site use the Advanced Custom Fields Plugin?
