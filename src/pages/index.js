@@ -2,7 +2,6 @@ import React from "react"
 import { StaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
-// import Image from "../components/Image"
 import SEO from "../components/SEO"
 import BannerImage from "../components/BannerImage"
 import PostList from "../components/PostList"
@@ -36,7 +35,9 @@ const IndexPage = () => (
     </section>
 
     <section className={`${styles.featuredPosts} wrapper`}>
-      <SectionHeader text="The Blog" />
+      <SectionHeader>
+        <h3>The Blog</h3>
+      </SectionHeader>
       <StaticQuery
         query={graphql`
           query LatestPostsQuery {
@@ -71,7 +72,9 @@ const IndexPage = () => (
     </section>
 
     <section className={styles.publishedIn}>
-      <SectionHeader text="Published In" />
+      <SectionHeader>
+        <h3>Published In</h3>
+      </SectionHeader>
 
       <div className={`${styles.logoContainer} wrapper wrapper-thin`}>
         <a

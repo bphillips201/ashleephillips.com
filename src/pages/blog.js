@@ -10,7 +10,9 @@ const Blog = () => (
   <Layout>
     <SEO title="Blog" />
     <section className="shaded-section">
-      <SectionHeader text="Blog" headerType="h1" />
+      <SectionHeader>
+        <h1>Blog</h1>
+      </SectionHeader>
     </section>
 
     <section className="wrapper">

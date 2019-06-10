@@ -1,6 +1,6 @@
 @import "../partials/variables";
 
-.sectionHeader {
+.sectionHeader > * {
   @include alt-font(5);
   text-align: center;
   font-size: 1.67rem;
@@ -21,8 +21,4 @@
   &:after {
     margin-left: $base;
   }
-}
-
-h1.sectionHeader {
-  padding-bottom: 0;
 }
