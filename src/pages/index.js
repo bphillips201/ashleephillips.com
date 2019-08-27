@@ -36,39 +36,8 @@ const IndexPage = () => (
 
     <section className={`${styles.featuredPosts} wrapper`}>
       <SectionHeader>
-        <h3>The Blog</h3>
+        <h3>Featured Work</h3>
       </SectionHeader>
-      <StaticQuery
-        query={graphql`
-          query LatestPostsQuery {
-            allWordpressPost(limit: 3) {
-              edges {
-                node {
-                  id
-                  title
-                  path
-                  featured_media {
-                    id
-                    alt_text
-                    localFile {
-                      childImageSharp {
-                        fluid {
-                          src
-                        }
-                      }
-                    }
-                  }
-                  categories {
-                    id
-                    name
-                  }
-                }
-              }
-            }
-          }
-        `}
-        render={data => <PostList postData={data.allWordpressPost.edges} />}
-      />
     </section>
 
     <section className={styles.publishedIn}>
