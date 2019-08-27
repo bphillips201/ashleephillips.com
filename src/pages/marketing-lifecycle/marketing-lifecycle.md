@@ -1,7 +1,8 @@
 ---
-path: "/marketing-lifecycle"
+path: "/work/marketing-lifecycle"
 date: "2019-05-04"
 title: "Marketing Lifecycle"
+featuredImage: ./marketing-lifecycle-after.png
 ---
 
 ## Challenge
@@ -43,4 +44,6 @@ For example, I recommended things like:
 **More educational content to guide people through getting and keeping customers.**
 I was happy with the collaboration process. There were a lot of cooks in the kitchen on this small addition to the webpage, but we were able to reach a compromise.
 
-![Marketing lifecycle after Ashlee's edits](marketing-dashboard-after.jpg)
+![Marketing lifecycle before Ashlee's edits](marketing-lifecycle-before.png)
+
+![Marketing lifecycle after Ashlee's edits](marketing-lifecycle-after.png)
