@@ -1,5 +1,4 @@
 import React from "react"
-import { StaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -93,6 +92,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            company
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {

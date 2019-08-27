@@ -10,36 +10,15 @@
   list-style-type: none;
 
   img {
-    margin-bottom: $base;
+    position: absolute !important;
+    height: auto !important;
   }
 }
 
 .categories {
   @include alt-font(1);
-  margin-bottom: $base;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  li {
-    display: inline-block;
-    font-size: 0.7rem;
-    margin-bottom: 0;
-    margin-right: $base;
-
-    &:after {
-      content: "/";
-      margin-left: $base;
-    }
-
-    &:last-child:after {
-      content: "";
-      margin-left: 0;
-    }
-  }
+  margin: $base3X 0 $base 0;
+  font-size: 0.7rem;
 }
 
 .postTitle {
@@ -66,7 +45,7 @@
   }
 
   p {
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   b,
@@ -88,5 +67,10 @@
     p {
       line-height: 1.8;
     }
+  }
+
+  img {
+    position: absolute !important;
+    height: auto !important;
   }
 }

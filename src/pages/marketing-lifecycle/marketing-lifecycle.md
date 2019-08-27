@@ -1,8 +1,9 @@
 ---
 path: "/work/marketing-lifecycle"
+company: "MINDBODY"
 date: "2019-05-04"
 title: "Marketing Lifecycle"
-featuredImage: ./marketing-lifecycle-after.png
+featuredImage: ./lifecycle-featured.jpg
 ---
 
 ## Challenge
@@ -19,11 +20,11 @@ Develop a streamlined, relevant version of the marketing lifecycle based on MIND
 - Message development
 - Information architecture
 
-###Team:
+##Team
 
-- Alex Ross, visual designer
-- Sara Lancaster, UX designer
-- Marianne Connor, researcher
+- <a href="https://www.linkedin.com/in/alexis-elan-ross/" target="_blank">Alex Ross</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/heysaralancaster/" target="_blank">Sara Lancaster</a>, UX Designer
+- <a href="https://www.linkedin.com/in/marianneconner/" target="_blank">Marianne Connor</a>, Researcher
 
 ## Process
 

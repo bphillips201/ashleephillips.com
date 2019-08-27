@@ -5,32 +5,32 @@ import Img from "gatsby-image"
 
 import styles from "../styles/modules/Post.module.scss"
 
-const PostList = ({ postData }) => {
-  return (
-    <ul className={styles.postList}>
-      {postData.map(post => (
-        <li key={post.node.id}>
-          {post.node.frontmatter.featuredImage && (
-            <Link to={post.node.frontmatter.path}>
-              <Img
-                fluid={
-                  post.node.frontmatter.featuredImage.childImageSharp.fluid
-                }
-                objectFit="cover"
-                objectPosition="50% 50%"
-              />
-            </Link>
-          )}
-          <Link className={styles.postTitle} to={post.node.frontmatter.path}>
-            <span
-              dangerouslySetInnerHTML={{ __html: post.node.frontmatter.title }}
+const PostList = ({ postData }) => (
+  <ul className={styles.postList}>
+    {postData.map(post => (
+      <li key={post.node.id}>
+        {post.node.frontmatter.featuredImage && (
+          <Link to={post.node.frontmatter.path}>
+            <Img
+              fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
+              objectFit="cover"
+              objectPosition="50% 50%"
             />
           </Link>
-        </li>
-      ))}
-    </ul>
-  )
-}
+        )}
+        <div
+          className={styles.categories}
+          dangerouslySetInnerHTML={{ __html: post.node.frontmatter.company }}
+        />
+        <Link className={styles.postTitle} to={post.node.frontmatter.path}>
+          <div
+            dangerouslySetInnerHTML={{ __html: post.node.frontmatter.title }}
+          />
+        </Link>
+      </li>
+    ))}
+  </ul>
+)
 
 PostList.propTypes = {
   postData: PropTypes.arrayOf(PropTypes.object),
