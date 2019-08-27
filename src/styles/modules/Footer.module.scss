@@ -1,13 +1,17 @@
 @import "../partials/variables";
 
 .footer {
-  background: $black;
-  color: white;
-  padding: $base3X 0;
+  text-align: center;
+  padding: ($base4X * 2) 0;
+
+  svg {
+    margin-bottom: $base4X;
+  }
 }
 
 .copyright {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
+  font-size: 12px;
 }

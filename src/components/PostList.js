@@ -10,28 +10,21 @@ const PostList = ({ postData }) => {
     <ul className={styles.postList}>
       {postData.map(post => (
         <li key={post.node.id}>
-          {post.node.featured_media && (
-            <Link to={post.node.path}>
+          {post.node.frontmatter.featuredImage && (
+            <Link to={post.node.frontmatter.path}>
               <Img
-                fluid={post.node.featured_media.localFile.childImageSharp.fluid}
+                fluid={
+                  post.node.frontmatter.featuredImage.childImageSharp.fluid
+                }
                 objectFit="cover"
                 objectPosition="50% 50%"
-                alt={post.node.featured_media.alt_text}
               />
             </Link>
           )}
-          <div className={styles.categories}>
-            <ul>
-              {post.node.categories.map(cat => (
-                <li
-                  key={cat.id}
-                  dangerouslySetInnerHTML={{ __html: cat.name }}
-                />
-              ))}
-            </ul>
-          </div>
-          <Link className={styles.postTitle} to={post.node.path}>
-            <span dangerouslySetInnerHTML={{ __html: post.node.title }} />
+          <Link className={styles.postTitle} to={post.node.frontmatter.path}>
+            <span
+              dangerouslySetInnerHTML={{ __html: post.node.frontmatter.title }}
+            />
           </Link>
         </li>
       ))}

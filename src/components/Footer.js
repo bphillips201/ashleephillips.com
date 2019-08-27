@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import LogoIcon from "../images/logo-light.svg"
+import LogoIcon from "../images/logo-dark.svg"
 
 import styles from "../styles/modules/Footer.module.scss"
 
