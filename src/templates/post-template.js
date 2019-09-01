@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 
 import styles from "../styles/modules/post.module.scss"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 export default function Template({ data }) {
   const { markdownRemark } = data
