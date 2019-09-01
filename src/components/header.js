@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import LogoIcon from "../images/logo-dark.svg"
 
-import styles from "../styles/modules/Header.module.scss"
+import styles from "../styles/modules/header.module.scss"
 import MainMenu from "./main-menu"
 
 function Header() {

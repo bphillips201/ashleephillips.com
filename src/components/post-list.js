@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-import styles from "../styles/modules/Post.module.scss"
+import styles from "../styles/modules/post.module.scss"
 
 const PostList = ({ postData }) => (
   <ul className={styles.postList}>

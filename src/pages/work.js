@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostList from "../components/post-list"
 
-import styles from "../styles/modules/Page.module.scss"
+import styles from "../styles/modules/page.module.scss"
 
 const Work = ({
   data: {

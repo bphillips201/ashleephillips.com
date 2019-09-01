@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 
-import styles from "../styles/modules/Post.module.scss"
+import styles from "../styles/modules/post.module.scss"
 
 export default function Template({ data }) {
   const { markdownRemark } = data

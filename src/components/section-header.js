@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { sectionHeader } from "../styles/modules/Typography.module.scss"
+import { sectionHeader } from "../styles/modules/typography.module.scss"
 
 const SectionHeader = ({ children }) => {
   return <div className={sectionHeader}>{children}</div>

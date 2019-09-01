@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import styles from "../styles/modules/Header.module.scss"
+import styles from "../styles/modules/header.module.scss"
 
 function MainMenu() {
   return (

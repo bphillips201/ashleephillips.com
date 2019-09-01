@@ -5,14 +5,14 @@ import SEO from "../components/seo"
 import BannerImage from "../components/banner-image"
 import PostList from "../components/post-list"
 
-import styles from "../styles/modules/Home.module.scss"
+import styles from "../styles/modules/home.module.scss"
 import LinkButton from "../components/link-button"
 import SectionHeader from "../components/section-header"
 import {
   CoyoteOakLogo,
   EdibleSLOLogo,
   WeddingStandardLogo,
-} from "../components/Image"
+} from "../components/image"
 
 const IndexPage = ({
   data: {

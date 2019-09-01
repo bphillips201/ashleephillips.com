@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import LogoIcon from "../images/logo-dark.svg"
 
-import styles from "../styles/modules/Footer.module.scss"
+import styles from "../styles/modules/footer.module.scss"
 
 function Footer() {
   return (
