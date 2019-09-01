@@ -43,7 +43,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#911b35`,
         display: `minimal-ui`,
         icon: `src/favicon.png`, // This path is relative to the root of the site.
       },
