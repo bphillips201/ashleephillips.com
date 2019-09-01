@@ -1,13 +1,13 @@
 import React from "react"
 
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import BannerImage from "../components/BannerImage"
-import PostList from "../components/PostList"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import BannerImage from "../components/banner-image"
+import PostList from "../components/post-list"
 
 import styles from "../styles/modules/Home.module.scss"
-import LinkButton from "../components/LinkButton"
-import SectionHeader from "../components/SectionHeader"
+import LinkButton from "../components/link-button"
+import SectionHeader from "../components/section-header"
 import {
   CoyoteOakLogo,
   EdibleSLOLogo,

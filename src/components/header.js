@@ -3,7 +3,7 @@ import React from "react"
 import LogoIcon from "../images/logo-dark.svg"
 
 import styles from "../styles/modules/Header.module.scss"
-import MainMenu from "./MainMenu"
+import MainMenu from "./main-menu"
 
 function Header() {
   return (
