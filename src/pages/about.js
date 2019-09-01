@@ -8,18 +8,18 @@ const About = () => (
   <Layout>
     <SEO
       title="About"
-      description="I was born in a small town and raised in a family bookstore."
+      description="I was born in a small town and raised in a bookstore."
     />
     <section className={`${styles.page} chunk`}>
       <div className="wrapper wrapper-thin">
-        <h1>I was born in a small town and raised in a family bookstore.</h1>
+        <h1>I was born in a small town and raised in a bookstore.</h1>
       </div>
 
       <div className="wrapper wrapper-small">
         <p>
-          At twenty-five, I moved to the west coast with my cat and husband in
+          At twenty-five, I moved to the West Coast with my cat and husband in
           tow. Now I hang my keys in San Luis Obispo, California, where I work
-          as a user experience (UX) Writer at MINDBODY. It’s in this role I
+          as a user experience (UX) writer at MINDBODY. It’s in this role I
           found my passion for digital accessibility and became my team’s
           squeaky wheel, constantly asking, “How can we make this accessible?”
         </p>
