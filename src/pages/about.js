@@ -40,6 +40,16 @@ const About = () => (
               Read my blog on Medium
             </a>
           </li>
+
+          <li>
+            <a
+              rel="noopener noreferrer"
+              href="https://www.meetup.com/Central-Coast-UX-Writers-Meetup/"
+              target="_blank"
+            >
+              Join the Central Coast UX Writers Meetup
+            </a>
+          </li>
         </ul>
       </div>
     </section>
