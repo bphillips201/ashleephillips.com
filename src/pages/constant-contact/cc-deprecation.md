@@ -4,7 +4,7 @@ company: "MINDBODY"
 date: "2019-05-01"
 title: "Constant Contact Deprecation"
 companyLogo: ../company-logos/mindbody.jpg
-featuredImage: ../marketing-lifecycle/lifecycle-featured.jpg
+featuredImage: ./cc-featured.jpg
 ---
 
 ### Challenge
@@ -22,10 +22,10 @@ Inform customers in phases that Constant Contact’s integration is being remove
 
 ### Team
 
-- Alex Ross, visual designer
-- Sara Lancaster, UX designer
-- Marianne Connor, researcher
-- Ryan Dougal, product marketing manager
+- <a href="https://www.linkedin.com/in/alexis-elan-ross/" target="_blank">Alexis Ross</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/heysaralancaster/" target="_blank">Sara Lancaster</a>, UX Designer
+- <a href="https://www.linkedin.com/in/marianneconner/" target="_blank">Marianne Connor</a>, Researcher
+- <a href="https://www.linkedin.com/in/rmdougal/" target="_blank">Ryan Dougal</a>, Product Marketing Manager
 
 ### Process
 
@@ -41,12 +41,20 @@ Collaborate with product marketing, Create a sense of urgency (so customers woul
 
 We decided on an initial email, an FTU modal, and two alert banners (one on their dashboard and the second in their reports).
 
-#### Modal
+### Modal
 
-#### Banners
+![Constant Contact deprecation modal](cc-modal.png)
+
+<center><small><em>Click image to expand</em></small></center>
+
+### Banners
+
+The first alert lets users know when their features would be unavailable.
+
+![The first alert lets users know when their features would be unavailable.](cc-unavailable.png)
+
+The second alert was the last chance for users to make a decision.
+
+![The second alert was the last chance for users to make a decision.](cc-decision.png)
 
 <center><small><em>Click images to expand</em></small></center>
-
-![Marketing lifecycle before Ashlee's edits](marketing-lifecycle-before.png)
-
-![Marketing lifecycle after Ashlee's edits](marketing-lifecycle-after.png)

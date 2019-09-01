@@ -51,7 +51,7 @@
 
   h1 {
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.45;
     margin-bottom: $base3X;
     font-size: 42px;
   }
@@ -106,10 +106,6 @@
   }
 
   :global .gatsby-resp-image-wrapper {
-    margin-top: $base4X * 2;
-    border-radius: 6px;
-    border: 1px solid #e5e5e5;
-    overflow: hidden;
-    box-shadow: 0 0 20px 0 rgba($color: #000000, $alpha: 0.15);
+    margin-top: $base4X;
   }
 }

@@ -46,8 +46,6 @@ For example, I recommended things like:
 **More educational content to guide people through getting and keeping customers.**
 I was happy with the collaboration process. There were a lot of cooks in the kitchen on this small addition to the webpage, but we were able to reach a compromise.
 
-<center><small><em>Click images to expand</em></small></center>
+![Marketing lifecycle before and after](marketing-lifecycle-demo.png)
 
-![Marketing lifecycle before Ashlee's edits](marketing-lifecycle-before.png)
-
-![Marketing lifecycle after Ashlee's edits](marketing-lifecycle-after.png)
+<center><small><em>Click image to expand</em></small></center>

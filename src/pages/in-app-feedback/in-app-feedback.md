@@ -1,10 +1,10 @@
 ---
 path: "/work/in-app-feedback-survey"
 company: "MINDBODY"
-date: "2019-05-05"
+date: "2019-05-02"
 title: "In-App Feedback Survey"
 companyLogo: ../company-logos/mindbody.jpg
-featuredImage: ../marketing-lifecycle/lifecycle-featured.jpg
+featuredImage: ./app-feedback-featured.jpg
 ---
 
 ### Challenge
@@ -24,9 +24,9 @@ Create an in-app feedback modal that is easy (and delightful) to use and send th
 
 ### Team
 
-- Kit French, visual designer
-- Kat Cordio, UX designer
-- Emma Tietje, researcher
+- <a href="https://www.linkedin.com/in/kitfrench/" target="_blank">Kit French</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/katcordio/" target="_blank">Kathryn Cordio</a>, UX Designer
+- Emma Tietje, Researcher
 
 ### Process
 
@@ -46,8 +46,6 @@ The feedback modal has been one of the most popular additions to our app. We rec
 
 ### Workflow with success message
 
-<center><small><em>Click images to expand</em></small></center>
+![Workflow for in-app feedback survey](feedback-demo.png)
 
-![Marketing lifecycle before Ashlee's edits](marketing-lifecycle-before.png)
-
-![Marketing lifecycle after Ashlee's edits](marketing-lifecycle-after.png)
+<center><small><em>Click image to expand</em></small></center>

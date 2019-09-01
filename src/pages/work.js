@@ -15,7 +15,7 @@ const Work = ({
     <section className={`${styles.page} chunk`}>
       <div className="wrapper wrapper-thin">
         <h1>
-          I’m a User Experience Writer with a passion for digital accessibility.
+          I’m a user experience writer with a passion for digital accessibility.
         </h1>
       </div>
 

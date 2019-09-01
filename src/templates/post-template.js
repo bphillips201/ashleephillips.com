@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 
 import styles from "../styles/modules/post.module.scss"
+import SEO from "../components/SEO"
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -14,6 +15,7 @@ export default function Template({ data }) {
     markdownRemark.frontmatter.companyLogo.childImageSharp.fluid
   return (
     <Layout>
+      <SEO title={`${frontmatter.title} | Case Study`} />
       <section className="chunk">
         <div className={styles.post}>
           <div className={`${styles.postHeader} wrapper`}>
@@ -22,7 +24,9 @@ export default function Template({ data }) {
             </div>
 
             <div className={styles.postMeta}>
-              <div className={styles.subTitle}>UX Writing Case Study</div>
+              <div className={styles.subTitle}>
+                UX Writing &nbsp;|&nbsp; Case Study
+              </div>
               <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
 
               <div className={styles.companyLogo}>
