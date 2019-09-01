@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link to="/">
+        <Link title="Ashlee Phillips" to="/">
           <LogoIcon />
         </Link>
       </div>

@@ -8,13 +8,12 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="wrapper">
-        <Link to="/">
+        <Link title="Ashlee Phillips" to="/">
           <LogoIcon />
         </Link>
         <div className={styles.copyright}>
           © {new Date().getFullYear()} Ashlee Phillilps
         </div>
-        <small className={styles.tracking}>(This site doesn't track you)</small>
       </div>
     </footer>
   )

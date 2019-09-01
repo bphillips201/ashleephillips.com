@@ -10,7 +10,10 @@ const PostList = ({ postData }) => (
     {postData.map(post => (
       <li key={post.node.id}>
         {post.node.frontmatter.featuredImage && (
-          <Link to={post.node.frontmatter.path}>
+          <Link
+            title={post.node.frontmatter.title}
+            to={post.node.frontmatter.path}
+          >
             <Img
               fluid={post.node.frontmatter.featuredImage.childImageSharp.fluid}
               objectFit="cover"

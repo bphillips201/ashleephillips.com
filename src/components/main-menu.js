@@ -8,19 +8,20 @@ function MainMenu() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link to="/about" activeClassName="active">
+          <Link title="About" to="/about" activeClassName="active">
             About
           </Link>
         </li>
 
         <li>
-          <Link to="/work" activeClassName="active">
+          <Link title="Work" to="/work" activeClassName="active">
             Work
           </Link>
         </li>
 
         <li>
           <a
+            title="Read my blog on Medium"
             href="https://medium.com/@ashleeletters"
             rel="noopener noreferrer"
             target="_blank"

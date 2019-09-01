@@ -31,8 +31,13 @@ const IndexPage = ({
             I speak about web accessbility and geek out over calligraphy and
             Bob’s Burgers.
           </p>
-          <LinkButton to="/work" template="primary" text="View my work" />
-          <LinkButton to="/about" text="Learn more" />
+          <LinkButton
+            title="View my work"
+            to="/work"
+            template="primary"
+            text="View my work"
+          />
+          <LinkButton title="About me" to="/about" text="Learn more" />
         </div>
 
         <BannerImage className={styles.banner} />
@@ -58,6 +63,7 @@ const IndexPage = ({
             href="http://www.coyoteandoak.com/purchase"
             target="_blank"
             rel="noopener noreferrer"
+            title="Coyote + Oak Magazine"
           >
             <CoyoteOakLogo />
           </a>
@@ -65,6 +71,7 @@ const IndexPage = ({
             href="http://ediblesanluisobispo.ediblecommunities.com/"
             target="_blank"
             rel="noopener noreferrer"
+            title="Edible SLO Magazine"
           >
             <EdibleSLOLogo />
           </a>
@@ -72,6 +79,7 @@ const IndexPage = ({
             href="https://www.theweddingstandard.com/magazine/"
             target="_blank"
             rel="noopener noreferrer"
+            title="The Wedding Standard Magazine"
           >
             <WeddingStandardLogo />
           </a>
