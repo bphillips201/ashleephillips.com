@@ -38,15 +38,17 @@ const IndexPage = ({
         <BannerImage className={styles.banner} />
       </section>
 
-      <section className={`${styles.featuredPosts} wrapper`}>
+      <section className={`${styles.featuredPosts} chunk-large`}>
         <SectionHeader>
           <h3>Featured Work</h3>
         </SectionHeader>
 
-        <PostList postData={edges} />
+        <div className="wrapper">
+          <PostList postData={edges} />
+        </div>
       </section>
 
-      <section className={styles.publishedIn}>
+      <section className={`${styles.publishedIn} chunk-shaded chunk-large`}>
         <SectionHeader>
           <h3>Published In</h3>
         </SectionHeader>
@@ -87,7 +89,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 12)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path

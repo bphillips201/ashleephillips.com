@@ -1,25 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
-const Work = () => (
+import styles from "../styles/modules/Page.module.scss"
+
+const About = () => (
   <Layout>
     <SEO title="About" />
-    <div className="wrapper">
+    <section className={`${styles.page} chunk`}>
       <div className="wrapper wrapper-thin">
         <h1>I was born in a small town and raised in a family bookstore.</h1>
+      </div>
 
+      <div className="wrapper wrapper-small">
         <p>
           At 25, I moved to the West Coast with my cat and husband in tow. Now I
           hang my keys in San Luis Obispo, California, where I works as a User
-          Experience (UX) Writer. It’s in this role I found my passion for
-          digital accessibility and became my team’s accessibility advocate,
-          constantly asking, “How can we make this accessible?”.
+          Experience (UX) Writer at MINDBODY. It’s in this role I found my
+          passion for digital accessibility and became my team’s accessibility
+          advocate, constantly asking, “How can we make this accessible?”
         </p>
 
-        <ul>
+        <ul className={styles.unstyledList}>
           <li>
             <a
               rel="noopener noreferrer"
@@ -40,8 +42,8 @@ const Work = () => (
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   </Layout>
 )
 
-export default Work
+export default About

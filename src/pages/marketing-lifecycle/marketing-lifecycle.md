@@ -3,34 +3,35 @@ path: "/work/marketing-lifecycle"
 company: "MINDBODY"
 date: "2019-05-04"
 title: "Marketing Lifecycle"
+companyLogo: ../company-logos/mindbody.jpg
 featuredImage: ./lifecycle-featured.jpg
 ---
 
-## Challenge
+### Challenge
 
 Help people understand where to focus their marketing efforts and which tools to set up, so they can reach their goals
 
-## Solution
+### Solution
 
 Develop a streamlined, relevant version of the marketing lifecycle based on MINDBODY’s customers’ needs
 
-## How I helped
+### How I helped
 
 - Content strategy and plain language writing
 - Message development
 - Information architecture
 
-##Team
+### Team
 
-- <a href="https://www.linkedin.com/in/alexis-elan-ross/" target="_blank">Alex Ross</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/alexis-elan-ross/" target="_blank">Alexis Ross</a>, Visual Designer
 - <a href="https://www.linkedin.com/in/heysaralancaster/" target="_blank">Sara Lancaster</a>, UX Designer
 - <a href="https://www.linkedin.com/in/marianneconner/" target="_blank">Marianne Connor</a>, Researcher
 
-## Process
+### Process
 
 Battling the “too many to choose from” disease, I worked with product marketing, visual and UX design to help people understand which tools are available, which they need to set up, and which they can use if they upgrade. I worked with visual to shape where the messaging should live and with UX design to decide how to introduce the new element.
 
-## Recommendations
+### Recommendations
 
 Find a balance between using precise language and user-focused explanations
 
@@ -40,10 +41,12 @@ For example, I recommended things like:
 - Use less MINDBODY jargon
 - Don’t interrupt their flow with a modal
 
-## Outcome
+### Outcome
 
 **More educational content to guide people through getting and keeping customers.**
 I was happy with the collaboration process. There were a lot of cooks in the kitchen on this small addition to the webpage, but we were able to reach a compromise.
+
+<center><small><em>Click images to expand</em></small></center>
 
 ![Marketing lifecycle before Ashlee's edits](marketing-lifecycle-before.png)
 

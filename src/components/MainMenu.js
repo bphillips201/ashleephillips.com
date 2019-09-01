@@ -14,6 +14,12 @@ function MainMenu() {
         </li>
 
         <li>
+          <Link to="/work" activeClassName="active">
+            Work
+          </Link>
+        </li>
+
+        <li>
           <a
             href="https://medium.com/@ashleeletters"
             rel="noopener noreferrer"

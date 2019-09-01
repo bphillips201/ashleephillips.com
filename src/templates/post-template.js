@@ -10,20 +10,35 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark
   const featuredImgFluid =
     markdownRemark.frontmatter.featuredImage.childImageSharp.fluid
+  const companyLogoFluid =
+    markdownRemark.frontmatter.companyLogo.childImageSharp.fluid
   return (
     <Layout>
-      <div className="wrapper">
+      <section className="chunk">
         <div className={styles.post}>
-          <Img fluid={featuredImgFluid} />
-          <div className="wrapper wrapper-thin">
-            <h1>{frontmatter.title}</h1>
+          <div className={`${styles.postHeader} wrapper`}>
+            <div className={styles.featuredImage}>
+              <Img fluid={featuredImgFluid} alt={frontmatter.company} />
+            </div>
+
+            <div className={styles.postMeta}>
+              <div className={styles.subTitle}>UX Writing Case Study</div>
+              <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
+
+              <div className={styles.companyLogo}>
+                <Img fluid={companyLogoFluid} />
+              </div>
+            </div>
+          </div>
+
+          <div className="wrapper wrapper-small">
             <div
               className={styles.postContent}
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
@@ -38,6 +53,13 @@ export const pageQuery = graphql`
         title
         company
         featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        companyLogo {
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid

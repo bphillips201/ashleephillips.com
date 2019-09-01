@@ -1,0 +1,19 @@
+@import "../partials/variables";
+
+.page {
+  h1 {
+    font-size: 42px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: $base4X * 3;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+.unstyledList {
+  list-style-type: none;
+  margin-left: 0;
+}

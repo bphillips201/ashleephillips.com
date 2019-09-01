@@ -14,6 +14,9 @@ function Footer() {
         <div className={styles.copyright}>
           © {new Date().getFullYear()} Ashlee Phillilps
         </div>
+        <small className={styles.tracking}>
+          Good news: this site doesn't track you
+        </small>
       </div>
     </footer>
   )
