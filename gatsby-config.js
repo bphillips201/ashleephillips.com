@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ashlee Phillips`,
-    description: `UX Writing & A11y`,
+    description: `UX Writer, Speaker, and A11y`,
     author: `Ashlee Phillips`,
   },
   plugins: [

@@ -9,63 +9,60 @@
 
   p {
     margin-bottom: $base3X * 2;
+    line-height: 1.8;
   }
 
   a {
     margin: 0 $base2X 0 0;
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      margin-bottom: $base2X;
+    }
   }
-
-  //   &:before {
-  //     content: "";
-  //     background-color: $primary-color;
-  //     position: absolute;
-  //     top: 138px;
-  //     height: 4px;
-  //     width: 1600px;
-  //     left: 50%;
-  //     margin-left: -800px;
-  //   }
-
-  //   &:after {
-  //     content: "";
-  //     background-color: green;
-  //     position: absolute;
-  //     top: 138px;
-  //     height: 4px;
-  //     width: 4px;
-  //     left: 50%;
-  //     margin-left: -2px;
-  //   }
 }
 
 .banner {
   height: 480px;
   margin-right: -275px;
   flex: 1.52;
+
+  @media screen and (max-width: 1120px) {
+    margin-right: -$base3X;
+    flex: 1;
+  }
 }
 
 .cta {
   flex: 1;
   z-index: 2;
+  margin-right: $base4X;
 
   &:after {
     content: "";
     position: absolute;
     top: 0;
-    left: 8%;
+    left: 10%;
     width: 50%;
     height: 100%;
     background: white;
     transform: skew(20deg);
     z-index: -1;
+
+    @media screen and (max-width: 1120px) {
+      transform: skew(15deg);
+    }
+
+    @media screen and (max-width: 920px) {
+      transform: skew(5deg);
+      left: 7%;
+    }
   }
 }
 
 .publishedIn {
   background: $soft-background;
   position: relative;
-  // padding-bottom: $base3X + 80px;
-  margin-bottom: $base3X;
 }
 
 .logoContainer {
