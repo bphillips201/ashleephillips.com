@@ -11,7 +11,10 @@ const Work = ({
   },
 }) => (
   <Layout>
-    <SEO title="Work" />
+    <SEO
+      title="Work"
+      description="I’m a user experience writer with a passion for digital accessibility."
+    />
     <section className={`${styles.page} chunk`}>
       <div className="wrapper wrapper-thin">
         <h1>

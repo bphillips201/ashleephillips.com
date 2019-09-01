@@ -6,7 +6,10 @@ import styles from "../styles/modules/page.module.scss"
 
 const About = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO
+      title="About"
+      description="I was born in a small town and raised in a family bookstore."
+    />
     <section className={`${styles.page} chunk`}>
       <div className="wrapper wrapper-thin">
         <h1>I was born in a small town and raised in a family bookstore.</h1>
