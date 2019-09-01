@@ -25,6 +25,7 @@ $fonts-app: "Poppins", "Sarabun", Arial, Helvetica, sans-serif;
 
 @mixin alt-font($letter-spacing) {
   font-family: $fonts-app;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: #{$letter-spacing}px;
 }
