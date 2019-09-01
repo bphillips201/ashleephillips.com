@@ -11,6 +11,7 @@ const PostList = ({ postData }) => (
       <li key={post.node.id}>
         {post.node.frontmatter.featuredImage && (
           <Link
+            className={styles.postThumbnail}
             title={post.node.frontmatter.title}
             to={post.node.frontmatter.path}
           >
@@ -21,10 +22,7 @@ const PostList = ({ postData }) => (
             />
           </Link>
         )}
-        <div
-          className={styles.categories}
-          dangerouslySetInnerHTML={{ __html: post.node.frontmatter.company }}
-        />
+        <div className={styles.categories}>UX Writing</div>
         <Link className={styles.postTitle} to={post.node.frontmatter.path}>
           <div
             dangerouslySetInnerHTML={{ __html: post.node.frontmatter.title }}

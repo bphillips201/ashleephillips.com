@@ -13,6 +13,19 @@
     position: absolute !important;
     height: auto !important;
   }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.postThumbnail {
+  transition: opacity 100ms ease;
+  display: block;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .post {

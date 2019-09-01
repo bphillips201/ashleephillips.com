@@ -25,7 +25,7 @@ export default function Template({ data }) {
 
             <div className={styles.postMeta}>
               <div className={styles.subTitle}>
-                UX Writing &nbsp;|&nbsp; Case Study
+                Case Study &nbsp;|&nbsp; UX Writing
               </div>
               <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
 
