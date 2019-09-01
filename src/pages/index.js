@@ -6,6 +6,7 @@ import BannerImage from "../components/banner-image"
 import PostList from "../components/post-list"
 
 import styles from "../styles/modules/home.module.scss"
+import { button } from "../styles/modules/button.module.scss"
 import LinkButton from "../components/link-button"
 import SectionHeader from "../components/section-header"
 import {
@@ -27,8 +28,8 @@ const IndexPage = ({
         <div className={styles.cta}>
           <h1>Hi, my dudes.</h1>
           <p>
-            I’m a User Experience Writer living on the California central coast.
-            I speak about web accessbility and geek out over calligraphy and
+            I’m a user experience writer living on the California central coast.
+            I speak about digital accessbility and geek out over calligraphy and
             Bob’s Burgers.
           </p>
           <LinkButton
@@ -37,7 +38,15 @@ const IndexPage = ({
             template="primary"
             text="View my work"
           />
-          <LinkButton title="About me" to="/about" text="Learn more" />
+          <a
+            title="Read my blog on Medium"
+            className={button}
+            href="https://medium.com/@ashleeletters"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Read my Blog
+          </a>
         </div>
 
         <BannerImage className={styles.banner} />

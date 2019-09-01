@@ -17,11 +17,11 @@ const About = () => (
 
       <div className="wrapper wrapper-small">
         <p>
-          At 25, I moved to the West Coast with my cat and husband in tow. Now I
-          hang my keys in San Luis Obispo, California, where I works as a User
-          Experience (UX) Writer at MINDBODY. It’s in this role I found my
-          passion for digital accessibility and became my team’s accessibility
-          advocate, constantly asking, “How can we make this accessible?”
+          At twenty-five, I moved to the west coast with my cat and husband in
+          tow. Now I hang my keys in San Luis Obispo, California, where I work
+          as a user experience (UX) Writer at MINDBODY. It’s in this role I
+          found my passion for digital accessibility and became my team’s
+          squeaky wheel, constantly asking, “How can we make this accessible?”
         </p>
 
         <ul className={styles.unstyledList}>
@@ -50,7 +50,7 @@ const About = () => (
               href="https://www.meetup.com/Central-Coast-UX-Writers-Meetup/"
               target="_blank"
             >
-              Join the Central Coast UX Writers Meetup
+              Join the Central Coast UX Writers meetup
             </a>
           </li>
         </ul>
