@@ -16,8 +16,11 @@
     margin: 0 $base2X 0 0;
 
     @media screen and (max-width: 900px) {
-      width: 100%;
       margin-bottom: $base2X;
+    }
+
+    @media screen and (max-width: 540px) {
+      display: block;
     }
   }
 }
@@ -30,6 +33,10 @@
   @media screen and (max-width: 1120px) {
     margin-right: -$base3X;
     flex: 1;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: none;
   }
 }
 
@@ -58,6 +65,11 @@
       left: 7%;
     }
   }
+
+  @media screen and (max-width: 700px) {
+    margin-right: 0;
+    margin-top: $base4X;
+  }
 }
 
 .publishedIn {
@@ -67,10 +79,15 @@
 
 .logoContainer {
   display: grid;
-  grid-template-columns: 24% 24% 24%;
-  grid-gap: 9.33%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: $base4X * 2;
   justify-content: space-between;
   align-items: center;
+
+  :global .gatsby-image-wrapper {
+    max-width: 240px;
+    margin: 0 auto;
+  }
 
   img {
     position: absolute !important;

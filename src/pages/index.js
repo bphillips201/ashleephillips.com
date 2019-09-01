@@ -53,7 +53,7 @@ const IndexPage = ({
           <h3>Published In</h3>
         </SectionHeader>
 
-        <div className={`${styles.logoContainer} wrapper wrapper-thin`}>
+        <div className={`${styles.logoContainer} wrapper`}>
           <a
             href="http://www.coyoteandoak.com/purchase"
             target="_blank"

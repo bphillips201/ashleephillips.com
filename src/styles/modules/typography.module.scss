@@ -6,6 +6,7 @@
   font-size: 28px;
   margin-bottom: 0;
   padding-bottom: $base2X * 4;
+  position: relative;
 
   &:before,
   &:after {
@@ -20,5 +21,25 @@
 
   &:after {
     margin-left: $base;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 24px;
+    margin-bottom: $base2X;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: -$base4X;
+      margin-left: -1em;
+      display: none;
+    }
+
+    &:after {
+      position: absolute;
+      left: 50%;
+      bottom: $base4X;
+      margin-left: -1em;
+    }
   }
 }

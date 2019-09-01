@@ -6,6 +6,10 @@
     text-align: center;
     line-height: 1.6;
     margin-bottom: $base2X * 5;
+
+    @media screen and (max-width: 640px) {
+      font-size: 32px;
+    }
   }
 
   p {

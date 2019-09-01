@@ -8,11 +8,11 @@ import MainMenu from "./main-menu"
 function Header() {
   return (
     <header className={styles.header}>
-      <h1>
+      <div className={styles.logo}>
         <Link to="/">
           <LogoIcon />
         </Link>
-      </h1>
+      </div>
       <MainMenu />
     </header>
   )
