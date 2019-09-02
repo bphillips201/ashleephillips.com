@@ -106,12 +106,12 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 12)
+          excerpt(pruneLength: 140)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path
+            type
             title
-            company
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {

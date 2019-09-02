@@ -1,8 +1,9 @@
 ---
 path: "/work/cc-deprecation"
-company: "MINDBODY"
+type: "Case Study"
 date: "2019-05-01"
 title: "Constant Contact Deprecation"
+company: "MINDBODY"
 companyLogo: ../company-logos/mindbody.jpg
 featuredImage: ./cc-featured.jpg
 ---

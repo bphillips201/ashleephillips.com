@@ -1,8 +1,9 @@
 ---
 path: "/work/in-app-feedback-survey"
-company: "MINDBODY"
+type: "Case Study"
 date: "2019-05-02"
 title: "In-App Feedback Survey"
+company: "MINDBODY"
 companyLogo: ../company-logos/mindbody.jpg
 featuredImage: ./app-feedback-featured.jpg
 ---

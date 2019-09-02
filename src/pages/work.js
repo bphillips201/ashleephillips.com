@@ -42,7 +42,7 @@ export const portfolioQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
-            company
+            type
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {

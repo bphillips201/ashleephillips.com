@@ -1,8 +1,9 @@
 ---
 path: "/work/marketing-lifecycle"
-company: "MINDBODY"
+type: "Case Study"
 date: "2019-05-04"
 title: "Marketing Lifecycle"
+company: "MINDBODY"
 companyLogo: ../company-logos/mindbody.jpg
 featuredImage: ./lifecycle-featured.jpg
 ---
