@@ -70,6 +70,16 @@
     margin-bottom: $base3X * 2;
     line-height: 1.4;
   }
+
+  @media screen and (max-width: 540px) {
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  }
 }
 
 .subTitle {
