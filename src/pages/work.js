@@ -37,7 +37,7 @@ function Work({
         </div>
       </section>
 
-      <section className={`${styles.page} two-stack chunk`}>
+      <section className={`${styles.page} chunk`}>
         <div className="wrapper wrapper-thin">
           <h1>I’m a journalist and storyteller.</h1>
         </div>
