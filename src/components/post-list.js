@@ -22,7 +22,7 @@ const PostList = ({ postData }) => (
             />
           </Link>
         )}
-        <div className={styles.categories}>UX Writing</div>
+        <div className={styles.categories}>{post.node.frontmatter.type}</div>
         <Link className={styles.postTitle} to={post.node.frontmatter.path}>
           <div
             dangerouslySetInnerHTML={{ __html: post.node.frontmatter.title }}

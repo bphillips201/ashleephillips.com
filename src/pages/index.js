@@ -15,11 +15,15 @@ import {
   WeddingStandardLogo,
 } from "../components/image"
 
-const IndexPage = ({
+function IndexPage({
   data: {
     allMarkdownRemark: { edges },
   },
-}) => {
+}) {
+  const caseStudies = edges.filter(e => {
+    return e.node.frontmatter.type === "Case Study"
+  })
+
   return (
     <Layout>
       <SEO title="Home" keywords={[`ux writer`, `accessibility`, `speaker`]} />
@@ -58,7 +62,7 @@ const IndexPage = ({
         </SectionHeader>
 
         <div className="wrapper">
-          <PostList postData={edges} />
+          <PostList postData={caseStudies} />
         </div>
       </section>
 
