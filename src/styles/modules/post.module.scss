@@ -67,7 +67,6 @@
   h2 {
     font-size: 28px;
     color: #757575;
-    margin-bottom: $base3X * 2;
     line-height: 1.4;
   }
 
@@ -145,7 +144,7 @@
 
 .magazineHeader {
   text-align: center;
-  margin-top: $base3X * 2;
+  margin: ($base3X * 2) auto (($base3X * 2) + $base) auto;
 
   h1 {
     margin-top: $base3X * 2;
