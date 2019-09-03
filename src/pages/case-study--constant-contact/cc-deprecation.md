@@ -23,10 +23,10 @@ Inform customers in phases that Constant Contact’s integration is being remove
 
 ### Team
 
-- <a href="https://www.linkedin.com/in/alexis-elan-ross/" target="_blank">Alexis Ross</a>, Visual Designer
-- <a href="https://www.linkedin.com/in/heysaralancaster/" target="_blank">Sara Lancaster</a>, UX Designer
-- <a href="https://www.linkedin.com/in/marianneconner/" target="_blank">Marianne Connor</a>, Researcher
-- <a href="https://www.linkedin.com/in/rmdougal/" target="_blank">Ryan Dougal</a>, Product Marketing Manager
+- <a href="https://www.linkedin.com/in/alexis-elan-ross/" rel="noopener noreferrer" target="_blank">Alexis Ross</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/heysaralancaster/" rel="noopener noreferrer" target="_blank">Sara Lancaster</a>, UX Designer
+- <a href="https://www.linkedin.com/in/marianneconner/" rel="noopener noreferrer" target="_blank">Marianne Connor</a>, Researcher
+- <a href="https://www.linkedin.com/in/rmdougal/" rel="noopener noreferrer" target="_blank">Ryan Dougal</a>, Product Marketing Manager
 
 ### Process
 

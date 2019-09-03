@@ -25,8 +25,8 @@ Create an in-app feedback survey (presented as a modal) that's easy and delightf
 
 ### Team
 
-- <a href="https://www.linkedin.com/in/kitfrench/" target="_blank">Kit French</a>, Visual Designer
-- <a href="https://www.linkedin.com/in/katcordio/" target="_blank">Kathryn Cordio</a>, UX Designer
+- <a href="https://www.linkedin.com/in/kitfrench/" rel="noopener noreferrer" target="_blank">Kit French</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/katcordio/" rel="noopener noreferrer" target="_blank">Kathryn Cordio</a>, UX Designer
 - Emma Tietje, Researcher
 
 ### Process
