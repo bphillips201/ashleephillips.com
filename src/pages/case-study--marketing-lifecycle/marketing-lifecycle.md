@@ -27,14 +27,15 @@ Develop a streamlined, relevant version of the marketing lifecycle based on MIND
 - <a href="https://www.linkedin.com/in/alexis-elan-ross/" target="_blank">Alexis Ross</a>, Visual Designer
 - <a href="https://www.linkedin.com/in/heysaralancaster/" target="_blank">Sara Lancaster</a>, UX Designer
 - <a href="https://www.linkedin.com/in/marianneconner/" target="_blank">Marianne Connor</a>, Researcher
+- <a href="https://www.linkedin.com/in/rmdougal" target="_blank">Ryan Dougal</a>, Product Marketing Manager
 
 ### Process
 
-Battling the “too many to choose from” disease, I worked with product marketing, visual and UX design to help people understand which tools are available, which they need to set up, and which they can use if they upgrade. I worked with visual to shape where the messaging should live and with UX design to decide how to introduce the new element.
+Battling the “too many to choose from” disease, I worked with product marketing, visual and UX design to help people understand which tools are available, which they need to set up, and which they can use if they upgrade. I worked with Alex, the visual designer, to shape where the messaging should live and with UX designer, Sara, to decide how to introduce the new element, how it should be interacted with.
 
 ### Recommendations
 
-Find a balance between using precise language and user-focused explanations
+Find a balance between using precise language and user-focused explanations.
 
 For example, I recommended things like:
 
@@ -45,7 +46,8 @@ For example, I recommended things like:
 ### Outcome
 
 **More educational content to guide people through getting and keeping customers.**
-I was happy with the collaboration process. There were a lot of cooks in the kitchen on this small addition to the webpage, but we were able to reach a compromise.
+
+I was happy with the collaboration process. Once we agreed on the language choices, we were able to implement it throughout the rest of the page. There were a lot of cooks in the kitchen on this small addition to the webpage, but we were able to reach a happy compromise.
 
 ![Marketing lifecycle before and after](marketing-lifecycle-demo.png)
 
