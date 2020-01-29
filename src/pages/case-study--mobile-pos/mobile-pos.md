@@ -27,7 +27,7 @@ Minimally update the current “collect” workflow to limit change aversion dro
 
 ### Team
 
-- <a href="https://www.linkedin.com/in/laura-ziegler/" rel="noopener noreferrer" target="_blank">Laura Ziegler</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/laura-ziegler/" rel="noopener noreferrer" target="_blank">Laura Ziegler</a>, Product Designer
 - Emma Tietje, Researcher
 
 ### Process
