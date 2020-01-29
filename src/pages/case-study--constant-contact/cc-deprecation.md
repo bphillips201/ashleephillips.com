@@ -10,11 +10,11 @@ featuredImage: ./cc-featured.jpg
 
 ### Challenge
 
-Migrate existing customers using Constant Contact's integration—and onboard new customers—onto MINDBODY’s similar email campaign feature
+Migrate existing customers using Constant Contact's integration—and onboard new customers—onto MINDBODY’s similar email campaign feature.
 
 ### Solution
 
-Inform customers in phases that Constant Contact’s integration is being removed with an email, modal, and alert banners
+Inform customers in phases that Constant Contact’s integration is being removed with an email, modal, and alert banners.
 
 ### How I helped
 

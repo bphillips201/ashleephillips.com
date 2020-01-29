@@ -10,7 +10,7 @@ featuredImage: ./app-feedback-featured.jpg
 
 ### Challenge
 
-Encourage customers to share honest, actionable feedback about their app experience
+Encourage customers to share honest, actionable feedback about their app experience.
 
 ### Solution
 

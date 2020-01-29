@@ -10,11 +10,11 @@ featuredImage: ./lifecycle-featured.jpg
 
 ### Challenge
 
-Help people understand where to focus their marketing efforts and which tools to set up, so they can reach their goals
+Help people understand where to focus their marketing efforts and which tools to set up, so they can reach their goals.
 
 ### Solution
 
-Develop a streamlined, relevant version of the marketing lifecycle based on MINDBODY’s customers’ needs
+Develop a streamlined, relevant version of the marketing lifecycle based on MINDBODY’s customers’ needs.
 
 ### How I helped
 
