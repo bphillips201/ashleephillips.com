@@ -12,13 +12,11 @@ featuredImage: ./data-privacy-featured.jpg
 
 California Consumer Privacy Act (CCPA) went into effect on January 1, 2020. According to Security Intelligence, “Focusing on the rights of California residents, this legislation protects data privacy and helps individuals understand what data is collected and how it is sold or disclosed. Any organization interacting with Californians needs to comply.”
 
-Keeping up with data privacy requests is inconsistent and manual for businesses, as well as for MINDBODY employees. Customer support has to track, manage, and communicate the requests to the corresponding businesses and internal MB teams for processing—taking over 40 hours of support each month.
-
-Since the internal process is very manual and subject to error, Legal identified it as a risk.
+The process of keeping up with data privacy requests is manual for MINDBODY employees. Customer support has to track, manage, and communicate the requests to the corresponding businesses and internal MB teams for processing—taking over 40 hours of support each month. Legal identified this inefficiency as a risk.
 
 ### Solution
 
-Client-facing: Use the same content already built for the GDPR requirements
+Client-facing: Use the content already provided for the GDPR requirements
 
 Customer-facing: Build a page for them to easily track and manage their clients’ data requests
 
@@ -36,15 +34,15 @@ Customer-facing: Build a page for them to easily track and manage their clients�
 
 ### Process
 
-With a quick deadline, we had to cut corners. Devs decided to reuse the table component, but Sara and I decided to simplify and reorganize the content.
+With a tight deadline, we had to cut corners. Developers decided to reuse an existing table component; Sara and I decided to simplify and reorganize the content.
 
-The majority of the work was content-related: figuring out what content to include, how to alert users they have new requests, instructional info to help them understand this new business responsibility.
+The majority of the work was content-related: figuring out what content to include, alerting users about new requests, and creating instructions to help them understand this new business responsibility.
 
 ### Recommendations
 
-- Use the same terminology for the new customer-facing content as was used for the client-facing content
-  - Consistency will help customer support whenever customers or clients call in for help
-- Link the client’s name to their personal page to see more details (do they owe money, have unused classes, etc.)
+- Use the same terminology for the new customer-facing content as we did for the client-facing content
+  - Consistency will help customer support whenever customers call in for help
+- Link the client’s name to their personal page to see more details (if they owe money, have unused classes, etc.)
 
 ### Outcome
 

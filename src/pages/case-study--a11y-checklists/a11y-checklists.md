@@ -10,20 +10,20 @@ featuredImage: ./a11y-checklist.jpg
 
 ### Challenge
 
-Take nearly two decades of code, content, and designs that weren’t created with accessibility in mind, and create a process that would lead to AA compliance based on the Web Content Accessibility Guidelines (WCAG).
+Take nearly two decades of code, content, and designs that weren’t created with accessibility in mind, and create a process that would lead to AA accessibility compliance based on the Web Content Accessibility Guidelines (WCAG).
 
-But the WCAG is 80+ rules of jargon and difficult-to-understand rules.
+The WCAG is 80+ rules of jargon and difficult-to-understand rules.
 
 ### Solution
 
 Make it easy.
 
-Instead of putting the work and accessibility responsibility solely on devs and QA, we decided to let each craft do their part to build accessible products.
+Instead of putting the accessibility work solely on developers, we decided to empower each role in Product Development do their part to build accessible products.
 
 ### How I helped
 
-- Rewrote the WCAG rules
-- Grouped the relevant ones per discipline
+- Rewrote the WCAG rules into plain language checklist items
+- Grouped the items into discipline-specific sections: Dev, QA, Visual Design, UX Design, and Copy
 
 ### Team
 
@@ -38,11 +38,9 @@ Instead of putting the work and accessibility responsibility solely on devs and 
 
 ### Process
 
-I went through all 80 rules, pulled out the ones that were AA specific, and gave them to each discipline rep.
+The team went through all 80 WCAG rules and placed them into a spreadsheet.
 
-They rewrote the rules in their craft’s “language,” and I went through the final lists and copyedited them (and I was the copy rep).
-
-From there, we had checklists for each discipline (design, content, dev, and QA) to follow.
+Each discipline rewrote the rules in their craft’s "language," then I went through the final lists and copyedited them.
 
 ### Recommendations
 
@@ -51,7 +49,7 @@ From there, we had checklists for each discipline (design, content, dev, and QA)
 
 ### Outcome
 
-Increased accessibility awareness across the org and an easier way to build more accessible products
+Increased accessibility awareness across the organization and lowered the barrier of entry for building accessible products
 
 ![Accessibility Checklists for Writers](a11y-copy-checklists.png)
 

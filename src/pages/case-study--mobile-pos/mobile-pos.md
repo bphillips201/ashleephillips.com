@@ -10,33 +10,40 @@ featuredImage: ./mobile-pos.jpg
 
 ### Challenge
 
-Introduce a new mobile point-of-sale device—the BBPOS Chipper—and provide separate “connect” and “collect” workflows.
+Update the MINDBODY business app’s mobile checkout experience so customers can:
 
-Create an easier, more private way for customers to tip, and work with Legal to ensure we’re meeting California’s requirements.
+- Learn how to connect the new mobile point-of-sale device, the BBPOS Chipper, along with a tutorial on how to use it
+- Let clients review their cart before paying
+- Request tips more discreetly
+
+Use a shared UI so developers could build the experience faster.
+
+**Work environment challenge**
+
+In the middle of the design process, management swapped visual designers and the UX designer left the company.
 
 ### Solution
 
-Minimally update the current “collect” workflow to limit change aversion drop-offs, eliminate and/or combine a few screens to limit the number of taps (a big complaint among users) to get through the experience.
+Simplify the current experience by combining and eliminating a screens while using consistent elements across Android and iOS apps.
 
 ### How I helped
 
 - Guerrilla testing
 - Message development and content strategy (specifically around tipping)
 - Information architecture
-- Taxonomy and grouping
 
 ### Team
 
 - <a href="https://www.linkedin.com/in/laura-ziegler/" rel="noopener noreferrer" target="_blank">Laura Ziegler</a>, Product Designer
-- Emma Tietje, Researcher
+- <a href="https://www.linkedin.com/in/emilia-tietje-9081b157/" rel="noopener noreferrer" target="_blank">Emma Tietje</a>, Researcher
 
 ### Process
 
-One word: iteration.
+First, I ran a research session to see if the current experience (and the first version of the redesign) was going in the right direction. I also analyzed the competition (Square, Toast).
 
-Laura and I worked very closely with the developers since there were significant legacy issues—what code is changeable? Which screens need an error state or microcopy? How can we make this experience simpler? What has to stay because of legal requirements?
+Laura and I worked closely with the developers since there were legacy technical hurdles with the shared components and the original design. _What code was changeable? Which screens need an error state or microcopy? How can we make this experience simpler? What has to stay because of legal requirements?_
 
-The customer’s cart had to be reviewable before payment request, which required moving the tipping request in the flow.
+The customer’s cart had to be reviewable before payment request, which required moving the tip request workflow.
 
 ### Recommendations
 
@@ -49,9 +56,7 @@ The customer’s cart had to be reviewable before payment request, which require
 
 ### Outcome
 
-More educational content to guide people through getting and keeping customers.
-
-Total sales transactions have increased by 7% since the new tipping version rolled out (October 2019–December 2019).
+Total sales transactions have increased by 7% since the new tipping workflow was released (November 2019).
 
 As of January 2020, the app is processing an average of \$692,000 each month through the mobile checkout experience.
 
