@@ -30,9 +30,9 @@ Customer-facing: Build a page for them to easily track and manage their clientsâ
 
 ### Team
 
-- Sara Lancaster, UX Designer
-- Ryan Dougal, Product Marketing Manager
-- Chinwe Obi, Researcher
+- <a href="https://www.linkedin.com/in/heysaralancaster/" rel="noopener noreferrer" target="_blank">Sara Lancaster</a>, UX Designer
+- <a href="https://www.linkedin.com/in/rmdougal/" rel="noopener noreferrer" target="_blank">Ryan Dougal</a>, Product Marketing Manager
+- <a href="https://www.linkedin.com/in/chinweobi/" rel="noopener noreferrer" target="_blank">Chinwe Obi</a>, Researcher
 
 ### Process
 

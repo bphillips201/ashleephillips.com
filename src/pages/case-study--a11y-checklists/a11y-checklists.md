@@ -27,14 +27,14 @@ Instead of putting the work and accessibility responsibility solely on devs and 
 
 ### Team
 
-- Tyler Ramsey, Visual Designer
-- Alice Hahn, UX Designer
-- Danielle Pacheco, UX Designer
-- Brian Phillips, Front End Engineering Manager
-- Sara Deenanauth, Software Engineering Manager
-- Adilene Constante, Front End Engineer
-- Rochelle Turner, QA Manager
-- Nicole Ely, QA Engineer
+- <a href="https://www.linkedin.com/in/tylercramsey/" rel="noopener noreferrer" target="_blank">Tyler Ramsey</a>, Visual Designer
+- <a href="https://www.linkedin.com/in/rochellet/" rel="noopener noreferrer" target="_blank">Rochelle Turner</a>, QA Manager
+- <a href="https://www.linkedin.com/in/nicoleely/" rel="noopener noreferrer" target="_blank">Nicole Ely</a>, QA Engineer
+- <a href="https://www.linkedin.com/in/alicemhahn/" rel="noopener noreferrer" target="_blank">Alice Hahn</a>, UX Designer
+- <a href="https://www.linkedin.com/in/danipach/" rel="noopener noreferrer" target="_blank">Danielle Pacheco</a>, UX Designer
+- <a href="https://www.linkedin.com/in/sarajeancodes/" rel="noopener noreferrer" target="_blank">Sara Deenanauth</a>, Software Engineering Manager
+- <a href="https://www.linkedin.com/in/adileneconstante/" rel="noopener noreferrer" target="_blank">Adilene Constante</a>, Front End Engineer
+- <a href="https://www.linkedin.com/in/bphillips201/" rel="noopener noreferrer" target="_blank">Brian Phillips</a>, Front End Engineering Manager
 
 ### Process
 
