@@ -10,16 +10,16 @@ featuredImage: ./cc-featured.jpg
 
 ### Challenge
 
-Migrate existing customers using Constant Contact's integration—and onboard new customers—onto MINDBODY’s similar email campaign feature.
+Migrate existing customers using Constant Contact's integration and onboard new customers onto MINDBODY’s email campaign feature.
 
 ### Solution
 
-Inform customers in phases that Constant Contact’s integration is being removed with an email, modal, and alert banners.
+Using an email, modal, and alert banner, inform customers that Constant Contact’s integration is being removed.
 
 ### How I helped
 
 - Message development
-- Collaboration between team members in other departments (support and product marketing)
+- Collaboration with team members in other departments (Customer Support and Product Marketing)
 
 ### Team
 
@@ -30,18 +30,18 @@ Inform customers in phases that Constant Contact’s integration is being remove
 
 ### Process
 
-There were two groups of customers: those using Constant Contact and those not using any type of email marketing. I worked with product marketing to tailor the messaging that would help both groups feel supported in the choice they had to make, whether to keep using Constant Contact (just not with our integration) or start using MINDBODY’s similar tools.
+There were two groups of customers: those using Constant Contact and those not using any type of email marketing. I worked with Product Marketing to tailor the messaging that would help both groups feel supported in their choice: whether to keep using Constant Contact without our integration or start using MINDBODY’s similar tools.
 
 ### Recommendations
 
-- Collaborate with product marketing to align on message value props
-- Create a sense of urgency (so customers would take action) without getting in their way. They still needed to run their business and were already familiar with the Constant Contact functionality. We needed to explain the situation and the choice they needed to make all while giving them plenty of time to make that educated decision.
+- Collaborate with Product Marketing to align on message value props
+- Create a sense of urgency without getting in the customer's way. They still needed to run their business and were already familiar with Constant Contact. We needed to explain the situation and their options while giving them time to make a decision.
 
 ### Outcome
 
-**Helpful messaging that informed users about their options without pushing them to upgrade for the sake of it. No dark patterns here.**
+**Helpful messaging that informed users about their options without pushing them to upgrade. No dark patterns here.**
 
-We decided on an initial email, an FTU modal, and two alert banners (one on their dashboard and the second in their reports).
+We decided on an email, an FTU modal, and two alert banners (one on their dashboard and the second in their reports).
 
 ### Modal
 
