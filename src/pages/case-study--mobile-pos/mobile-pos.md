@@ -1,7 +1,7 @@
 ---
 path: "/work/mobile-pos"
 type: "Case Study"
-date: "2020-01-28"
+date: "2020-01-27"
 title: "Mobile Point-of-Sale"
 company: "MINDBODY"
 companyLogo: ../company-logos/mindbody.jpg
