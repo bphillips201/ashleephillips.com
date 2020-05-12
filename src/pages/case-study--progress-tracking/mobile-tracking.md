@@ -41,4 +41,4 @@ Mindbody deprioritized this project after COVID-19.
 
 ![Progress tracking flow](progress-tracking-flow.png)
 
-<center><small><em>Click images to expand</em></small></center>
+<center><small><em>Click image to expand</em></small></center>
