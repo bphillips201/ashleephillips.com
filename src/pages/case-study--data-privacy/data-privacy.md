@@ -1,7 +1,7 @@
 ---
 path: "/work/data-privacy"
 type: "Case Study"
-date: "2020-01-28"
+date: "2020-01-25"
 title: "CCPA Data Privacy"
 company: "MINDBODY"
 companyLogo: ../company-logos/mindbody.jpg
