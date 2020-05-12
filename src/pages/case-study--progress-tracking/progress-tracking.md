@@ -5,7 +5,7 @@ date: "2020-05-11"
 title: "Progress Tracking"
 company: "MINDBODY"
 companyLogo: ../company-logos/mindbody.jpg
-featuredImage: ../progress-tracking.jpg
+featuredImage: ./progress-tracking.jpg
 ---
 
 ### Challenge
