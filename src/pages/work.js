@@ -22,13 +22,12 @@ function Work({
     <Layout>
       <SEO
         title="Work"
-        description="I’m a user experience writer with a passion for digital accessibility."
+        description="I’m a content strategist with a passion for digital accessibility."
       />
       <section className={`${styles.page} chunk`}>
         <div className="wrapper wrapper-thin">
           <h1>
-            I’m a user experience writer with a passion for digital
-            accessibility.
+            I’m a content strategist with a passion for digital accessibility.
           </h1>
         </div>
 
