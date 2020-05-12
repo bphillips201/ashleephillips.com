@@ -30,11 +30,11 @@ function IndexPage({
 
       <section className={`${styles.hero} wrapper`}>
         <div className={styles.cta}>
-          <h1>Hi, my dudes.</h1>
+          <h1>Hi, my dudes</h1>
           <p>
-            I’m a user experience writer living on the California central coast.
-            I speak about digital accessbility and geek out over calligraphy and
-            Bob’s Burgers.
+            I’m a UX writer and content strategist living on the California
+            central coast. I speak about digital accessbility and geek out over
+            calligraphy and Bob’s Burgers.
           </p>
           <LinkButton
             title="View my work"
