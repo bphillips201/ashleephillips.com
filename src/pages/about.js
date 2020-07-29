@@ -19,9 +19,9 @@ const About = () => (
         <p>
           At twenty-five, I moved to the West Coast with my cat and husband in
           tow. Now I hang my keys in San Luis Obispo, California, where I work
-          as a user experience (UX) writer at MINDBODY. It’s in this role I
-          found my passion for digital accessibility and became my team’s
-          squeaky wheel, constantly asking, “How can we make this accessible?”
+          remotely as a content strategist at Facebook. These days, I'm my
+          team’s squeaky wheel, constantly asking, “How can we make this
+          accessible?”
         </p>
 
         <ul className={styles.unstyledList}>
