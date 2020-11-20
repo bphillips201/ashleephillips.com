@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: `Ashlee Phillips`,
@@ -76,6 +78,15 @@ module.exports = {
         rule: {
           include: /images/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `j1sm348czbc7`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
+        environment: 'master',
       },
     },
     {
