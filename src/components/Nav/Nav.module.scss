@@ -33,7 +33,7 @@
   }
 
   a {
-    color: $black;
+    color: var(--color-black);
     padding: $base;
     text-decoration: none;
     position: relative;
@@ -45,7 +45,7 @@
       bottom: -$base;
       left: 50%;
       height: 3px;
-      background: $primary-color;
+      background: var(--color-red);
       width: 0;
       transition: left ease 200ms, width ease 200ms;
     }

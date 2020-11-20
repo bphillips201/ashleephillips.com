@@ -4,8 +4,7 @@ import SEO from "../components/seo"
 import BannerImage from "../components/bannerImage"
 import PostList from "../components/post-list"
 import styles from "../styles/modules/home.module.scss"
-import { button } from "../styles/modules/button.module.scss"
-import LinkButton from "../components/link-button"
+import LinkButton from "../components/LinkButton/LinkButton"
 import SectionHeader from "../components/SectionHeader/SectionHeader"
 import {
   CoyoteOakLogo,
@@ -34,21 +33,8 @@ function IndexPage({
             speak about digital accessbility and geek out over calligraphy and
             Bob’s Burgers.
           </p>
-          <LinkButton
-            title="View my work"
-            to="/work"
-            template="primary"
-            text="View my work"
-          />
-          <a
-            title="Read my blog on Medium"
-            className={button}
-            href="https://medium.com/@ashleeletters"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Read my Blog
-          </a>
+          <LinkButton to="/work" title="View my work" template="primary">View my work</LinkButton>
+          <LinkButton to="https://medium.com/@ashleeletters" title="Read my blog on Medium" template="secondary">Read my Blog</LinkButton>
         </div>
 
         <BannerImage className={styles.banner} />
