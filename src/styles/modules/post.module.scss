@@ -144,10 +144,14 @@
 
 .magazineHeader {
   text-align: center;
-  margin: ($base3X * 2) auto (($base3X * 2) + $base) auto;
+  margin: ($base3X * 2) auto 0 auto;
 
   h1 {
     margin-top: $base3X * 2;
+    margin-bottom: $base;
+  }
+
+  h2 {
     margin-bottom: $base;
   }
 }

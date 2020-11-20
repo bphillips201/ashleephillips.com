@@ -9,7 +9,7 @@ const BannerImage: React.FC = () => {
       file(relativePath: { eq: "ashlee.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

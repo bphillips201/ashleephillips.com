@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/Layout/Layout"
-
+import Wrapper from "../components/Wrapper/Wrapper"
 import styles from "../styles/modules/post.module.scss"
 import SEO from "../components/seo"
 
@@ -15,7 +15,7 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title={`${frontmatter.title}`} />
-      <section>
+      <article>
         <div className={`${styles.magazine} ${styles.post}`}>
           <div className={styles.magazineFeaturedImage}>
             <Img fluid={featuredImgFluid} alt={frontmatter.company} />
@@ -23,7 +23,7 @@ export default function Template({ data }) {
           <center>
             <small>Photos by {frontmatter.photoCredit}</small>
           </center>
-          <div className={`${styles.magazineHeader} wrapper`}>
+          <Wrapper noUpPad className={styles.magazineHeader}>
             <div className={styles.postMeta}>
               <div className={styles.subTitle}>
                 {frontmatter.company} &nbsp;|&nbsp; {frontmatter.date}
@@ -31,16 +31,16 @@ export default function Template({ data }) {
               <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
               <h2 dangerouslySetInnerHTML={{ __html: frontmatter.subTitle }} />
             </div>
-          </div>
+          </Wrapper>
 
-          <div className="wrapper wrapper-small">
+          <Wrapper width="xthin" noUpPad>
             <div
               className={styles.postContent}
               dangerouslySetInnerHTML={{ __html: html }}
             />
-          </div>
+          </Wrapper>
         </div>
-      </section>
+      </article>
     </Layout>
   )
 }
@@ -59,7 +59,7 @@ export const pageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }

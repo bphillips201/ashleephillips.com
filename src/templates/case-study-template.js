@@ -5,6 +5,7 @@ import Layout from "../components/Layout/Layout"
 
 import styles from "../styles/modules/post.module.scss"
 import SEO from "../components/seo"
+import Wrapper from "../components/Wrapper/Wrapper"
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -16,9 +17,9 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title={`${frontmatter.title} | Case Study`} />
-      <section className="chunk">
+      <Wrapper>
         <div className={styles.post}>
-          <div className={`${styles.postHeader} wrapper`}>
+          <div className={styles.postHeader}>
             <div className={styles.featuredImage}>
               <Img fluid={featuredImgFluid} alt={frontmatter.company} />
             </div>
@@ -35,14 +36,14 @@ export default function Template({ data }) {
             </div>
           </div>
 
-          <div className="wrapper wrapper-small">
+          <Wrapper noPadX noUpPad width="xthin">
             <div
               className={styles.postContent}
               dangerouslySetInnerHTML={{ __html: html }}
             />
-          </div>
+          </Wrapper>
         </div>
-      </section>
+      </Wrapper>
     </Layout>
   )
 }
