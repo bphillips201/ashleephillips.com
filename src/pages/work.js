@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import PostList from "../components/post-list"
 
 import styles from "../styles/modules/page.module.scss"
+import Wrapper from "../components/Wrapper/Wrapper"
 
 function Work({
   data: {
@@ -19,32 +20,28 @@ function Work({
   })
 
   return (
-    <Layout>
+    <Layout className={styles.page}>
       <SEO
         title="Work"
         description="I’m a content strategist with a passion for digital accessibility."
       />
-      <section className={`${styles.page} chunk`}>
-        <div className="wrapper wrapper-thin">
-          <h1>
+      <Wrapper width="thin">
+        <h1>
             I’m a content strategist with a passion for digital accessibility.
           </h1>
-        </div>
+      </Wrapper>
 
-        <div className="wrapper">
-          <PostList postData={caseStudies} />
-        </div>
-      </section>
+      <Wrapper noUpPad>
+        <PostList postData={caseStudies} />
+      </Wrapper>
 
-      <section className={`${styles.page} chunk`}>
-        <div className="wrapper wrapper-thin">
-          <h1>I’m a journalist and storyteller.</h1>
-        </div>
+      <Wrapper width="thin">
+        <h1>I’m a journalist and storyteller.</h1>
+      </Wrapper>
 
-        <div className="wrapper">
-          <PostList postData={magazineFeatures} />
-        </div>
-      </section>
+      <Wrapper noUpPad>
+      <PostList postData={magazineFeatures} />
+      </Wrapper>
     </Layout>
   )
 }

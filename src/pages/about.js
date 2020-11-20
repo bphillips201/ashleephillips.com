@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
-
+import Wrapper from "../components/Wrapper/Wrapper"
 import styles from "../styles/modules/page.module.scss"
 
 const About = () => (
@@ -10,13 +10,12 @@ const About = () => (
       title="About"
       description="I was born in a small town and raised in a bookstore."
     />
-    <section className="chunk">
-      <div className="wrapper wrapper-thin">
-        <h1>I was born in a small town and raised in a bookstore.</h1>
-      </div>
+    <Wrapper width="thin">
+      <h1>I was born in a small town and raised in a bookstore.</h1>
+    </Wrapper>
 
-      <div className="wrapper wrapper-small">
-        <p>
+    <Wrapper width="xthin" noUpPad>
+      <p>
           At twenty-five, I moved to the West Coast with my cat and husband in
           tow. Now I hang my keys in San Luis Obispo, California, where I work
           remotely as a content strategist at Facebook. These days, I'm my
@@ -54,8 +53,7 @@ const About = () => (
             </a>
           </li>
         </ul>
-      </div>
-    </section>
+    </Wrapper>
   </Layout>
 )
 

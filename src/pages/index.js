@@ -10,6 +10,7 @@ import {
   WeddingStandardLogo,
 } from "../components/image"
 import Hero from "../components/Hero/Hero"
+import Wrapper from "../components/Wrapper/Wrapper"
 
 function IndexPage({
   data: {
@@ -26,15 +27,12 @@ function IndexPage({
 
       <Hero />
 
-      <section className={`${styles.featuredPosts} chunk-large`}>
+      <Wrapper size="tall">
         <SectionHeader>Featured Work</SectionHeader>
+        <PostList postData={caseStudies} />
+      </Wrapper>
 
-        <div className="wrapper">
-          <PostList postData={caseStudies} />
-        </div>
-      </section>
-
-      <section className={`${styles.publishedIn} chunk-shaded chunk-large`}>
+      <Wrapper size="tall" isTinted={true}>
         <SectionHeader>Published In</SectionHeader>
 
         <div className={`${styles.logoContainer} wrapper`}>
@@ -63,7 +61,7 @@ function IndexPage({
             <WeddingStandardLogo />
           </a>
         </div>
-      </section>
+      </Wrapper>
     </Layout>
   )
 }
