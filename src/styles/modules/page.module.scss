@@ -4,16 +4,12 @@
   h1 {
     font-size: 42px;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: $base2X * 5;
 
     @media screen and (max-width: 640px) {
       font-size: 32px;
     }
-  }
-
-  p {
-    line-height: 1.7;
   }
 }
 

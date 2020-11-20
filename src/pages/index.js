@@ -1,16 +1,15 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
-import BannerImage from "../components/bannerImage"
 import PostList from "../components/post-list"
 import styles from "../styles/modules/home.module.scss"
-import LinkButton from "../components/LinkButton/LinkButton"
 import SectionHeader from "../components/SectionHeader/SectionHeader"
 import {
   CoyoteOakLogo,
   EdibleSLOLogo,
   WeddingStandardLogo,
 } from "../components/image"
+import Hero from "../components/Hero/Hero"
 
 function IndexPage({
   data: {
@@ -25,23 +24,10 @@ function IndexPage({
     <Layout>
       <SEO title="Home" keywords={[`ux writer`, `accessibility`, `speaker`]} />
 
-      <section className={`${styles.hero} wrapper`}>
-        <div className={styles.cta}>
-          <h1>Hi, my dudes</h1>
-          <p>
-            I’m a content strategist living on the California central coast. I
-            speak about digital accessbility and geek out over calligraphy and
-            Bob’s Burgers.
-          </p>
-          <LinkButton to="/work" title="View my work" template="primary">View my work</LinkButton>
-          <LinkButton to="https://medium.com/@ashleeletters" title="Read my blog on Medium" template="secondary">Read my Blog</LinkButton>
-        </div>
-
-        <BannerImage className={styles.banner} />
-      </section>
+      <Hero />
 
       <section className={`${styles.featuredPosts} chunk-large`}>
-        <SectionHeader as="h3">Featured Work</SectionHeader>
+        <SectionHeader>Featured Work</SectionHeader>
 
         <div className="wrapper">
           <PostList postData={caseStudies} />
@@ -49,7 +35,7 @@ function IndexPage({
       </section>
 
       <section className={`${styles.publishedIn} chunk-shaded chunk-large`}>
-        <SectionHeader as="h3">Published In</SectionHeader>
+        <SectionHeader>Published In</SectionHeader>
 
         <div className={`${styles.logoContainer} wrapper`}>
           <a

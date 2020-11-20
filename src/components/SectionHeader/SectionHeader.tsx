@@ -7,7 +7,7 @@ type TSectionHeaderProps = AllHTMLAttributes<HTMLElement> & {
 }
 
 const SectionHeader: React.FC<TSectionHeaderProps> = props => {
-  const { as = "div", children, className = "", ...rest } = props
+  const { as = "h3", children, className = "", ...rest } = props
   const Component: any = as
   const sectionHeaderClasses = classnames({
     [styles.sectionHeader]: true,

@@ -1,9 +1,9 @@
-import React, { AllHTMLAttributes } from "react"
+import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import * as styles from "./BannerImage.module.scss"
 
-const BannerImage: React.FC<AllHTMLAttributes<HTMLElement>> = props => {
-  const { className = "" } = props
+const BannerImage: React.FC = () => {
   const { file } = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "ashlee.jpg" }) {
@@ -19,7 +19,7 @@ const BannerImage: React.FC<AllHTMLAttributes<HTMLElement>> = props => {
   return (
     <BackgroundImage
       Tag="section"
-      className={className}
+      className={styles.bannerImage}
       fluid={file.childImageSharp.fluid}
       backgroundColor={`#fff`}
     />
