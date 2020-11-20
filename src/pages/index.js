@@ -1,14 +1,12 @@
 import React from "react"
-
-import Layout from "../components/layout"
+import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
-import BannerImage from "../components/banner-image"
+import BannerImage from "../components/bannerImage"
 import PostList from "../components/post-list"
-
 import styles from "../styles/modules/home.module.scss"
 import { button } from "../styles/modules/button.module.scss"
 import LinkButton from "../components/link-button"
-import SectionHeader from "../components/section-header"
+import SectionHeader from "../components/SectionHeader/SectionHeader"
 import {
   CoyoteOakLogo,
   EdibleSLOLogo,
@@ -57,9 +55,7 @@ function IndexPage({
       </section>
 
       <section className={`${styles.featuredPosts} chunk-large`}>
-        <SectionHeader>
-          <h3>Featured Work</h3>
-        </SectionHeader>
+        <SectionHeader as="h3">Featured Work</SectionHeader>
 
         <div className="wrapper">
           <PostList postData={caseStudies} />
@@ -67,9 +63,7 @@ function IndexPage({
       </section>
 
       <section className={`${styles.publishedIn} chunk-shaded chunk-large`}>
-        <SectionHeader>
-          <h3>Published In</h3>
-        </SectionHeader>
+        <SectionHeader as="h3">Published In</SectionHeader>
 
         <div className={`${styles.logoContainer} wrapper`}>
           <a
@@ -106,6 +100,11 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(
       limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }

@@ -1,0 +1,8 @@
+@import "../../styles/partials/variables.scss";
+
+.header {
+  padding: $base3X;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

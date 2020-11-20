@@ -1,6 +1,6 @@
-@import "../partials/variables";
+@import "../../styles/partials/variables.scss";
 
-.sectionHeader > * {
+.sectionHeader {
   @include alt-font(5);
   text-align: center;
   font-size: 28px;
