@@ -1,4 +1,4 @@
-import { FluidObject } from "gatsby-image"
+import { FluidObject } from 'gatsby-image'
 
 export type TSiteProps = {
   title: string
@@ -18,19 +18,23 @@ export type TContent = {
   id: string
   name: string
   headline: string
+  photoCredit: string
+  publishDate: string
   title: string
+  subtitle: string
   workType: string
   featuredImage: TImageFluid
   workSamples: TImageFluid[]
   publicationWebsite: string
   publicationLogo: TImageFluid
-  publication: {
-    name: string
-  }
   fields: {
     path: string
   }
+  publication: {
+    name: string
+  }
   company: {
+    name: string
     companyLogo: TImageFluid
   }
   content: {

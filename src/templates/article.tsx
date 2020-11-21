@@ -1,42 +1,48 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../components/Layout/Layout"
-import Wrapper from "../components/Wrapper/Wrapper"
-import styles from "../styles/modules/post.module.scss"
-import SEO from "../components/seo"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Layout from '../components/Layout/Layout'
+import Wrapper from '../components/Wrapper/Wrapper'
+import * as styles from '../styles/modules/post.module.scss'
+import SEO from '../components/seo'
+import { TPageGlobals } from '../utils/constants'
 
-export default function Template({ data }) {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
-  const featuredImgFluid =
-    markdownRemark.frontmatter.featuredImage.childImageSharp.fluid
+const Article: React.FC<TPageGlobals> = props => {
+  const {
+    title,
+    subtitle,
+    publication,
+    photoCredit,
+    publishDate,
+    content,
+    featuredImage,
+  } = props.data.contentfulArticle
 
   return (
     <Layout>
-      <SEO title={`${frontmatter.title}`} />
+      <SEO title={title} />
       <article>
-        <div className={`${styles.magazine} ${styles.post}`}>
+        <div className={styles.post}>
           <div className={styles.magazineFeaturedImage}>
-            <Img fluid={featuredImgFluid} alt={frontmatter.company} />
+            <Img fluid={featuredImage.fluid} alt={publication.name} />
           </div>
-          <center>
-            <small>Photos by {frontmatter.photoCredit}</small>
-          </center>
+          <div className={styles.photoCredit}>Photo by {photoCredit}</div>
           <Wrapper noUpPad className={styles.magazineHeader}>
             <div className={styles.postMeta}>
               <div className={styles.subTitle}>
-                {frontmatter.company} &nbsp;|&nbsp; {frontmatter.date}
+                {publication.name} / {publishDate}
               </div>
-              <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
-              <h2 dangerouslySetInnerHTML={{ __html: frontmatter.subTitle }} />
+              <h1>{title}</h1>
+              <h2>{subtitle}</h2>
             </div>
           </Wrapper>
 
           <Wrapper width="xthin" noUpPad>
             <div
               className={styles.postContent}
-              dangerouslySetInnerHTML={{ __html: html }}
+              dangerouslySetInnerHTML={{
+                __html: content.childMarkdownRemark.html,
+              }}
             />
           </Wrapper>
         </div>
@@ -45,23 +51,26 @@ export default function Template({ data }) {
   )
 }
 
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM YYYY")
-        path
-        title
-        subTitle
-        photoCredit
-        company
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
+export default Article
+
+export const articleQuery = graphql`
+  query($id: String!) {
+    contentfulArticle(id: { eq: $id }) {
+      title
+      subtitle
+      publishDate(formatString: "MMMM YYYY")
+      photoCredit
+      publication {
+        name
+      }
+      content {
+        childMarkdownRemark {
+          html
+        }
+      }
+      featuredImage {
+        fluid(quality: 70, maxWidth: 1200, cropFocus: CENTER) {
+          ...GatsbyContentfulFluid_tracedSVG
         }
       }
     }

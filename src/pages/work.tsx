@@ -1,15 +1,15 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
-import Wrapper from "../components/Wrapper/Wrapper"
-import { TPageGlobals } from "../utils/constants"
-import PostList from "../components/PostList/PostList"
-import * as styles from "../styles/modules/page.module.scss"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout/Layout'
+import SEO from '../components/seo'
+import Wrapper from '../components/Wrapper/Wrapper'
+import { TPageGlobals } from '../utils/constants'
+import PostList from '../components/PostList/PostList'
+import * as styles from '../styles/modules/page.module.scss'
 
-const Work: React.FC<TPageGlobals> = (props) => {
-  const caseStudies = props.data.allContentfulCaseStudy.edges.map((n) => n.node)
-  const articles = props.data.allContentfulArticle.edges.map((n) => n.node)
+const Work: React.FC<TPageGlobals> = props => {
+  const caseStudies = props.data.allContentfulCaseStudy.edges.map(n => n.node)
+  const articles = props.data.allContentfulArticle.edges.map(n => n.node)
 
   return (
     <Layout className={styles.page}>
