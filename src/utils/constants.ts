@@ -24,6 +24,9 @@ export type TContent = {
   workSamples: TImageFluid[]
   publicationWebsite: string
   publicationLogo: TImageFluid
+  publication: {
+    name: string
+  }
   fields: {
     path: string
   }

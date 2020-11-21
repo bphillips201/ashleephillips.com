@@ -2,42 +2,38 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
-
-import styles from "../styles/modules/page.module.scss"
 import Wrapper from "../components/Wrapper/Wrapper"
+import { TPageGlobals } from "../utils/constants"
+import PostList from "../components/PostList/PostList"
+import * as styles from "../styles/modules/page.module.scss"
 
-function Work({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) {
-  const caseStudies = edges.filter((e) => {
-    return e.node.frontmatter.type === "Case Study"
-  })
-
-  const magazineFeatures = edges.filter((e) => {
-    return e.node.frontmatter.type === "Magazine Feature"
-  })
+const Work: React.FC<TPageGlobals> = (props) => {
+  const caseStudies = props.data.allContentfulCaseStudy.edges.map((n) => n.node)
+  const articles = props.data.allContentfulArticle.edges.map((n) => n.node)
 
   return (
     <Layout className={styles.page}>
       <SEO
         title="Work"
-        description="I’m a content strategist with a passion for digital accessibility."
+        description="I’m a content designer with a passion for digital accessibility."
       />
       <Wrapper width="thin">
         <h2>
-          I’m a content strategist with a passion for digital accessibility.
+          I’m a content designer with a passion for digital accessibility.
         </h2>
       </Wrapper>
 
-      <Wrapper noUpPad>{/* <PostList data={caseStudies} /> */}</Wrapper>
+      <Wrapper>
+        <PostList data={caseStudies} />
+      </Wrapper>
 
       <Wrapper width="thin">
         <h2>I’m a journalist and storyteller.</h2>
       </Wrapper>
 
-      <Wrapper noUpPad>{/* <PostList data={magazineFeatures} /> */}</Wrapper>
+      <Wrapper>
+        <PostList data={articles} />
+      </Wrapper>
     </Layout>
   )
 }
@@ -46,22 +42,49 @@ export default Work
 
 export const workQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allContentfulCaseStudy(sort: { fields: publishDate, order: DESC }) {
       edges {
         node {
           id
-          excerpt(pruneLength: 12)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+          fields {
             path
-            title
-            type
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
+          }
+          title
+          workType
+          featuredImage {
+            description
+            fluid(
+              quality: 100
+              maxWidth: 640
+              maxHeight: 480
+              cropFocus: CENTER
+            ) {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+        }
+      }
+    }
+    allContentfulArticle(sort: { fields: publishDate, order: DESC }) {
+      edges {
+        node {
+          id
+          fields {
+            path
+          }
+          title
+          publication {
+            name
+          }
+          featuredImage {
+            description
+            fluid(
+              quality: 100
+              maxWidth: 640
+              maxHeight: 480
+              cropFocus: CENTER
+            ) {
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }

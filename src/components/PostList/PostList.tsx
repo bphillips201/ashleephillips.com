@@ -26,7 +26,9 @@ const PostList: React.FC<TPostListProps> = (props) => {
                 alt={post.featuredImage.description}
               />
             </Link>
-            <div className={styles.postType}>{post.workType}</div>
+            <div className={styles.postType}>
+              {post.workType || post.publication.name}
+            </div>
             <Link to={post.fields.path} className={styles.postTitle}>
               {post.title}
             </Link>
