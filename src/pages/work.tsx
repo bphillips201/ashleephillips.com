@@ -1,7 +1,7 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
-import PostList from "../components/post-list"
 
 import styles from "../styles/modules/page.module.scss"
 import Wrapper from "../components/Wrapper/Wrapper"
@@ -32,7 +32,7 @@ function Work({
       </Wrapper>
 
       <Wrapper noUpPad>
-        <PostList postData={caseStudies} />
+        {/* <PostList data={caseStudies} /> */}
       </Wrapper>
 
       <Wrapper width="thin">
@@ -40,7 +40,7 @@ function Work({
       </Wrapper>
 
       <Wrapper noUpPad>
-      <PostList postData={magazineFeatures} />
+      {/* <PostList data={magazineFeatures} /> */}
       </Wrapper>
     </Layout>
   )

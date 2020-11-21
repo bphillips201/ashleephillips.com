@@ -1,6 +1,18 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: $fonts-base;
   color: var(--color-black);
+  font-size: 1.8rem;
+  overflow-x: hidden;
 }
 
 h1,
