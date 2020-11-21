@@ -4,7 +4,9 @@ import * as styles from './Nav.module.scss'
 
 const Nav: React.FC = () => {
   const isCurrent = (path: string) => {
-    return location ? location.pathname === path : false
+    if (typeof location !== 'undefined') {
+      return location.pathname === path
+    } else return false
   }
   const { site } = useStaticQuery(graphql`
     query {
