@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-remark-copy-linked-files`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -49,26 +50,25 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Prata`,
-            variants: [`400`],
-          },
-          {
-            family: `Source Sans Pro`,
-            variants: [`400`, `700`, `400i`, `700i`],
-          },
-          {
-            family: `Poppins`,
-            variants: [`700`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Prata`,
+              variants: [`400`],
+            },
+            {
+              family: `Source Sans Pro`,
+              variants: [`400`, `700`, `400i`, `700i`],
+            },
+            {
+              family: `Poppins`,
+              variants: [`700`],
+            },
+          ],
+        },
       },
-    },
-    {
-      resolve: `gatsby-plugin-sass`,
     },
     {
       resolve: "gatsby-plugin-react-svg",
