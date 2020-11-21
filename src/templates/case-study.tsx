@@ -19,7 +19,10 @@ const CaseStudy: React.FC<TPageGlobals> = props => {
 
   return (
     <Layout>
-      <SEO title={`${title} | Case Study`} />
+      <SEO
+        title={`${title} | Case Study`}
+        image={featuredImage.localFile.publicURL}
+      />
       <Wrapper>
         <div className={styles.post}>
           <div className={styles.postHeader}>
@@ -51,7 +54,7 @@ const CaseStudy: React.FC<TPageGlobals> = props => {
               <a
                 className={styles.workSample}
                 key={img.id}
-                href={`https://${img.file.url}`}
+                href={img.localFile.publicURL}
                 target="_blank"
               >
                 <Img fluid={img.fluid} alt={img.description} />
@@ -83,13 +86,16 @@ export const caseStudyQuery = graphql`
         fluid(quality: 100, maxWidth: 1000) {
           ...GatsbyContentfulFluid_tracedSVG
         }
-        file {
-          url
+        localFile {
+          publicURL
         }
       }
       featuredImage {
         fluid(quality: 90, maxWidth: 800) {
           ...GatsbyContentfulFluid_tracedSVG
+        }
+        localFile {
+          publicURL
         }
       }
       company {

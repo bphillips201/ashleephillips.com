@@ -9,8 +9,8 @@ export type TImageFluid = {
   id: string
   fluid: FluidObject
   description?: string
-  file: {
-    url: string
+  localFile: {
+    publicURL: string
   }
 }
 

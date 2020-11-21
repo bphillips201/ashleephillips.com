@@ -1,10 +1,11 @@
-require("dotenv").config()
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
     title: `Ashlee Phillips`,
-    description: `UX Writer and Speaker`,
-    author: `Ashlee Phillips`,
+    description: `Content Designer and Speaker`,
+    author: `@ashleeletters`,
+    siteUrl: `https://ashleephillips.com`,
   },
   plugins: [
     `gatsby-transformer-remark`,
@@ -64,7 +65,7 @@ module.exports = {
         spaceId: `j1sm348czbc7`,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         downloadLocal: true,
-        environment: "master",
+        environment: 'master',
       },
     },
     {

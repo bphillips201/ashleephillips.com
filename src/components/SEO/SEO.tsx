@@ -7,12 +7,13 @@ type TSEOProps = {
   description?: string
   lang?: string
   meta?: []
+  image?: string
   title: string
 }
 
 const SEO: React.FC<TSEOProps> = props => {
-  const { title, meta = [], lang = 'en', description = '' } = props
-  const { site } = useStaticQuery(
+  const { title, meta = [], lang = 'en', image = '', description = '' } = props
+  const { site, file } = useStaticQuery(
     graphql`
       query {
         site {
@@ -20,12 +21,19 @@ const SEO: React.FC<TSEOProps> = props => {
             title
             description
             author
+            siteUrl
           }
+        }
+        file(relativePath: { eq: "ashlee.jpg" }) {
+          publicURL
         }
       }
     `
   )
 
+  const bannerImage = image
+    ? site.siteMetadata.siteUrl + image
+    : site.siteMetadata.siteUrl + file.publicURL
   const metaDescription = description || site.siteMetadata.description
   const titleTemplate =
     title === 'Home'
@@ -57,7 +65,7 @@ const SEO: React.FC<TSEOProps> = props => {
         },
         {
           property: `og:image`,
-          content: ``,
+          content: bannerImage,
         },
         {
           name: `twitter:card`,
@@ -74,6 +82,10 @@ const SEO: React.FC<TSEOProps> = props => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: bannerImage,
         },
       ].concat(meta)}
     />

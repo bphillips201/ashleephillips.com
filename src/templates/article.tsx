@@ -20,7 +20,7 @@ const Article: React.FC<TPageGlobals> = props => {
 
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} image={featuredImage.localFile.publicURL} />
       <article>
         <div className={styles.post}>
           <div className={styles.magazineFeaturedImage}>
@@ -69,6 +69,9 @@ export const articleQuery = graphql`
         }
       }
       featuredImage {
+        localFile {
+          publicURL
+        }
         fluid(quality: 80, maxWidth: 1200) {
           ...GatsbyContentfulFluid_tracedSVG
         }
