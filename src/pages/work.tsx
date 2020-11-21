@@ -11,11 +11,11 @@ function Work({
     allMarkdownRemark: { edges },
   },
 }) {
-  const caseStudies = edges.filter(e => {
+  const caseStudies = edges.filter((e) => {
     return e.node.frontmatter.type === "Case Study"
   })
 
-  const magazineFeatures = edges.filter(e => {
+  const magazineFeatures = edges.filter((e) => {
     return e.node.frontmatter.type === "Magazine Feature"
   })
 
@@ -27,21 +27,17 @@ function Work({
       />
       <Wrapper width="thin">
         <h1>
-            I’m a content strategist with a passion for digital accessibility.
-          </h1>
+          I’m a content strategist with a passion for digital accessibility.
+        </h1>
       </Wrapper>
 
-      <Wrapper noUpPad>
-        {/* <PostList data={caseStudies} /> */}
-      </Wrapper>
+      <Wrapper noUpPad>{/* <PostList data={caseStudies} /> */}</Wrapper>
 
       <Wrapper width="thin">
         <h1>I’m a journalist and storyteller.</h1>
       </Wrapper>
 
-      <Wrapper noUpPad>
-      {/* <PostList data={magazineFeatures} /> */}
-      </Wrapper>
+      <Wrapper noUpPad>{/* <PostList data={magazineFeatures} /> */}</Wrapper>
     </Layout>
   )
 }

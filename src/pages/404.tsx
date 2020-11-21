@@ -14,16 +14,14 @@ const NotFoundPage = () => (
       </div>
 
       <div className="wrapper wrapper-small">
-        <center>
-          <p>
-            That page has been removed (or never existed at all). Sorry about
-            that.
-          </p>
+        <p>
+          That page has been removed (or never existed at all). Sorry about
+          that.
+        </p>
 
-          <Link to="/" title="Go home">
-            Go home
-          </Link>
-        </center>
+        <Link to="/" title="Go home">
+          Go home
+        </Link>
       </div>
     </section>
   </Layout>

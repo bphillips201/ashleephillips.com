@@ -9,7 +9,7 @@ type TLinkButtonProps = AllHTMLAttributes<HTMLElement> & {
   template: "primary" | "secondary"
 }
 
-const LinkButton: React.FC<TLinkButtonProps> = props => {
+const LinkButton: React.FC<TLinkButtonProps> = (props) => {
   const { to, title = "", template, className = "", children, ...rest } = props
   const linkButtonClasses = classnames({
     [styles.linkButton]: true,

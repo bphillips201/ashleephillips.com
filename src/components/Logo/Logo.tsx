@@ -6,7 +6,7 @@ type TLogoProps = TSiteProps & {
   darkMode?: boolean
 }
 
-const Logo: React.FC<TLogoProps> = props => {
+const Logo: React.FC<TLogoProps> = (props) => {
   const color = props.darkMode ? "#fff" : "#3c3c3c"
 
   return (

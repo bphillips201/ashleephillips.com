@@ -12,7 +12,7 @@ type TWrapperProps = AllHTMLAttributes<HTMLElement> & {
   noUpPad?: boolean
 }
 
-const Wrapper: React.FC<TWrapperProps> = props => {
+const Wrapper: React.FC<TWrapperProps> = (props) => {
   const {
     className = "",
     as = "section",

@@ -5,7 +5,7 @@ import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 import "./layout.scss"
 
-const Layout: React.FC<AllHTMLAttributes<HTMLElement>> = props => {
+const Layout: React.FC<AllHTMLAttributes<HTMLElement>> = (props) => {
   const { className = "", ...rest } = props
   const { site } = useStaticQuery(graphql`
     query {
