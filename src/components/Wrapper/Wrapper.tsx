@@ -5,31 +5,34 @@ import * as styles from "./Wrapper.module.scss"
 type TWrapperProps = AllHTMLAttributes<HTMLElement> & {
   as?: ReactNode
   width?: "thin" | "xthin" | "default"
-  size?: "tall" | "default"
-  isTinted?: boolean
+  tall?: boolean
+  tinted?: boolean
   noPadY?: boolean
   noPadX?: boolean
   noUpPad?: boolean
+  noDownPad?: boolean
 }
 
 const Wrapper: React.FC<TWrapperProps> = (props) => {
   const {
     className = "",
     as = "section",
-    isTinted = false,
     width = "default",
-    size = "default",
+    tinted = false,
+    tall = false,
     noPadY = false,
     noPadX = false,
     noUpPad = false,
+    noDownPad = false,
     ...rest
   } = props
   const wrapperClasses = classnames({
     [styles.wrapper]: true,
-    [styles[size]]: true,
-    [styles.tinted]: isTinted,
+    [styles.tall]: tall,
+    [styles.tinted]: tinted,
     [styles.noPadY]: noPadY,
     [styles.noUpPad]: noUpPad,
+    [styles.noDownPad]: noDownPad,
   })
   const chunkClasses = classnames({
     [styles.chunk]: true,

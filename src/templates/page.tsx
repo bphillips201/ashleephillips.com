@@ -16,7 +16,7 @@ const Page: React.FC<TPageGlobals> = (props) => {
         <h2>{headline}</h2>
       </Wrapper>
 
-      <Wrapper width="xthin" noUpPad>
+      <Wrapper width="xthin">
         <div
           dangerouslySetInnerHTML={{
             __html: content.childMarkdownRemark.html,

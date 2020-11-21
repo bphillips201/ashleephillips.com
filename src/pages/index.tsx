@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
 import PostList from "../components/PostList/PostList"
@@ -7,6 +8,7 @@ import SectionHeader from "../components/SectionHeader/SectionHeader"
 import Hero from "../components/Hero/Hero"
 import Wrapper from "../components/Wrapper/Wrapper"
 import { TPageGlobals } from "../utils/constants"
+import PublicationList from "../components/PublicationList/PublicationList"
 
 const IndexPage: React.FC<TPageGlobals> = (props) => {
   const { allContentfulCaseStudy, allContentfulPublication } = props.data
@@ -16,16 +18,14 @@ const IndexPage: React.FC<TPageGlobals> = (props) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`ux writer`, `accessibility`, `speaker`]} />
-
       <Hero />
-
-      <Wrapper>
+      <Wrapper tall>
         <SectionHeader>Featured Work</SectionHeader>
         <PostList data={posts} />
       </Wrapper>
-
-      <Wrapper isTinted={true}>
+      <Wrapper tall tinted>
         <SectionHeader>Published In</SectionHeader>
+        <PublicationList publications={publications} />
       </Wrapper>
     </Layout>
   )

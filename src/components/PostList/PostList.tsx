@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { TCaseStudy } from "../../utils/constants"
+import { TContent } from "../../utils/constants"
 import * as styles from "./PostList.module.scss"
 
 type TPostListProps = {
-  data: TCaseStudy[]
+  data: TContent[]
 }
 
 const PostList: React.FC<TPostListProps> = (props) => {

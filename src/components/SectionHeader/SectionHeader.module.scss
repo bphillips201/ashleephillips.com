@@ -4,8 +4,8 @@
   @include alt-font(5);
   text-align: center;
   font-size: 28px;
-  margin-bottom: 0;
-  padding-bottom: $base2X * 4;
+  margin-top: 0;
+  margin-bottom: $base3X * 2;
   position: relative;
 
   &:before,
