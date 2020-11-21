@@ -6,6 +6,7 @@ import PostList from "../components/PostList/PostList"
 import SectionHeader from "../components/SectionHeader/SectionHeader"
 import Hero from "../components/Hero/Hero"
 import Wrapper from "../components/Wrapper/Wrapper"
+import { TPageGlobals } from "../utils/constants"
 
 const IndexPage: React.FC<TPageGlobals> = (props) => {
   const { allContentfulCaseStudy, allContentfulPublication } = props.data

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import { TCaseStudy } from "../../utils/constants"
 import * as styles from "./PostList.module.scss"
 
 type TPostListProps = {
@@ -12,7 +13,7 @@ const PostList: React.FC<TPostListProps> = (props) => {
 
   return (
     <ul className={styles.postList}>
-      {data.map((post: any) => (
+      {data.map(post => (
         <li key={post.id} className={styles.postBlock}>
           <div>
             <Link

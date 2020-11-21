@@ -1,9 +1,11 @@
-type TSiteProps = {
+import { FluidObject } from "gatsby-image"
+
+export type TSiteProps = {
   title: string
   description?: string
 }
 
-type TCaseStudy = {
+export type TCaseStudy = {
   id: string
   fields: {
     path: string
@@ -12,29 +14,29 @@ type TCaseStudy = {
   workType: string
   featuredImage: {
     description: string
-    fluid: object
+    fluid: FluidObject
   }
 }
 
-type TPublication = {
+export type TPublication = {
   id: string
   name: string
   publicationWebsite: string
   publicationLogo: {
-    fluid: object
+    fluid: FluidObject
   }
 }
 
-type TContentfulData = {
+export type TContentfulData = {
   [name: string]: TCaseStudy & TPublication
 }
 
-type TAllContentfulData = {
+export type TAllContentfulData = {
   [name: string]: {
     edges: TContentfulData[]
   }
 }
 
-type TPageGlobals = {
+export type TPageGlobals = {
   data: TAllContentfulData & TContentfulData
 }
