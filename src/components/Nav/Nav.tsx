@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
       <ul>
         {site.siteMetadata.menuLinks.map(
           (link: { name: string; path: string }) => (
-            <li>
+            <li key={link.path}>
               <Link
                 title={link.name}
                 to={link.path}
