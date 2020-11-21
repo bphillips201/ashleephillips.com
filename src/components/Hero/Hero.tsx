@@ -1,8 +1,8 @@
-import React from "react"
-import BannerImage from "../BannerImage/BannerImage"
-import LinkButton from "../LinkButton/LinkButton"
-import * as styles from "./hero.module.scss"
-import Wrapper from "../Wrapper/Wrapper"
+import React from 'react'
+import BannerImage from '../BannerImage/BannerImage'
+import LinkButton from '../LinkButton/LinkButton'
+import * as styles from './Hero.module.scss'
+import Wrapper from '../Wrapper/Wrapper'
 
 const Hero: React.FC = () => (
   <Wrapper className={styles.hero} noPadY={true}>

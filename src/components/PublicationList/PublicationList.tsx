@@ -1,18 +1,18 @@
-import React from "react"
-import Img from "gatsby-image"
-import { TContent } from "../../utils/constants"
-import * as styles from "./PublicationList.module.scss"
+import React from 'react'
+import Img from 'gatsby-image'
+import { TContent } from '../../utils/constants'
+import * as styles from './PublicationList.module.scss'
 
 type TPublicationListProps = {
   publications: TContent[]
 }
 
-const PublicationList: React.FC<TPublicationListProps> = (props) => {
+const PublicationList: React.FC<TPublicationListProps> = props => {
   const { publications } = props
 
   return (
     <ul className={styles.publicationList}>
-      {publications.map((pub) => (
+      {publications.map(pub => (
         <li key={pub.id}>
           <a
             target="_blank"

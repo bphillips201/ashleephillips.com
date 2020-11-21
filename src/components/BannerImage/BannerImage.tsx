@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
-import * as styles from "./BannerImage.module.scss"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
+import * as styles from './BannerImage.module.scss'
 
 const BannerImage: React.FC = () => {
   const { file } = useStaticQuery(graphql`

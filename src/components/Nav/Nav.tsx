@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
-import * as styles from './nav.module.scss'
+import * as styles from './Nav.module.scss'
 
 const Nav: React.FC = () => {
   const isCurrent = (path: string) => {

@@ -1,19 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
-import { TContent } from "../../utils/constants"
-import * as styles from "./PostList.module.scss"
+import React from 'react'
+import { Link } from 'gatsby'
+import Img from 'gatsby-image'
+import { TContent } from '../../utils/constants'
+import * as styles from './PostList.module.scss'
 
 type TPostListProps = {
   data: TContent[]
 }
 
-const PostList: React.FC<TPostListProps> = (props) => {
+const PostList: React.FC<TPostListProps> = props => {
   const { data } = props
 
   return (
     <ul className={styles.postList}>
-      {data.map((post) => (
+      {data.map(post => (
         <li key={post.id} className={styles.postBlock}>
           <div>
             <Link

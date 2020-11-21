@@ -1,10 +1,10 @@
-import React, { AllHTMLAttributes, ReactNode } from "react"
-import classnames from "classnames"
-import * as styles from "./Wrapper.module.scss"
+import React, { AllHTMLAttributes, ReactNode } from 'react'
+import classnames from 'classnames'
+import * as styles from './Wrapper.module.scss'
 
 type TWrapperProps = AllHTMLAttributes<HTMLElement> & {
   as?: ReactNode
-  width?: "thin" | "xthin" | "default"
+  width?: 'thin' | 'xthin' | 'default'
   tall?: boolean
   tinted?: boolean
   noPadY?: boolean
@@ -13,11 +13,11 @@ type TWrapperProps = AllHTMLAttributes<HTMLElement> & {
   noDownPad?: boolean
 }
 
-const Wrapper: React.FC<TWrapperProps> = (props) => {
+const Wrapper: React.FC<TWrapperProps> = props => {
   const {
-    className = "",
-    as = "section",
-    width = "default",
+    className = '',
+    as = 'section',
+    width = 'default',
     tinted = false,
     tall = false,
     noPadY = false,

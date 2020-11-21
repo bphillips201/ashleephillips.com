@@ -1,22 +1,22 @@
-import React, { AllHTMLAttributes } from "react"
-import { Link } from "gatsby"
-import classnames from "classnames"
-import * as styles from "./LinkButton.module.scss"
+import React, { AllHTMLAttributes } from 'react'
+import { Link } from 'gatsby'
+import classnames from 'classnames'
+import * as styles from './LinkButton.module.scss'
 
 type TLinkButtonProps = AllHTMLAttributes<HTMLElement> & {
   to: string
   title?: string
-  template: "primary" | "secondary"
+  template: 'primary' | 'secondary'
 }
 
-const LinkButton: React.FC<TLinkButtonProps> = (props) => {
-  const { to, title = "", template, className = "", children, ...rest } = props
+const LinkButton: React.FC<TLinkButtonProps> = props => {
+  const { to, title = '', template, className = '', children, ...rest } = props
   const linkButtonClasses = classnames({
     [styles.linkButton]: true,
     [styles[template]]: true,
     [className]: className,
   })
-  const isExternal = to.includes("http")
+  const isExternal = to.includes('http')
 
   return (
     <>

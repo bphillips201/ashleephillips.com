@@ -1,12 +1,11 @@
-import React, { AllHTMLAttributes } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import classnames from "classnames"
-import Header from "../Header/Header"
-import Footer from "../Footer/Footer"
-import "./layout.scss"
+import React, { AllHTMLAttributes } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import './Layout.scss'
 
-const Layout: React.FC<AllHTMLAttributes<HTMLElement>> = (props) => {
-  const { className = "", ...rest } = props
+const Layout: React.FC<AllHTMLAttributes<HTMLElement>> = props => {
+  const { className = '', ...rest } = props
   const { site } = useStaticQuery(graphql`
     query {
       site {
