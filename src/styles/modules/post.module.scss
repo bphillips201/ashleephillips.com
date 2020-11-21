@@ -72,7 +72,7 @@
 
   @media screen and (max-width: 540px) {
     h1 {
-      font-size: 36px;
+      font-size: 3.6rem;
     }
 
     h2 {
@@ -86,8 +86,15 @@
   margin-bottom: $base3X;
 }
 
-:global .gatsby-image-wrapper {
-  width: 100%;
+.workSample {
+  display: block;
+  margin-bottom: $base3X;
+}
+
+.sampleExpand {
+  text-align: center;
+  display: block;
+  font-style: italic;
 }
 
 .companyLogo {
@@ -101,36 +108,9 @@
   h5,
   h6 {
     margin-top: $base3X * 3;
+    margin-bottom: 0;
     font-family: $fonts-base;
-  }
-
-  p {
-    line-height: 1.7;
-  }
-
-  b,
-  strong {
-    font-weight: 700;
-  }
-
-  i,
-  em {
-    font-style: italic;
-  }
-
-  blockquote {
-    font-style: italic;
-    padding: 0 $base2X $base3X $base2X;
-    margin: 0 auto;
-    max-width: 600px;
-
-    p {
-      line-height: 1.8;
-    }
-  }
-
-  :global .gatsby-resp-image-wrapper {
-    margin-top: $base4X;
+    font-weight: 600;
   }
 }
 

@@ -26,15 +26,15 @@ function Work({
         description="I’m a content strategist with a passion for digital accessibility."
       />
       <Wrapper width="thin">
-        <h1>
+        <h2>
           I’m a content strategist with a passion for digital accessibility.
-        </h1>
+        </h2>
       </Wrapper>
 
       <Wrapper noUpPad>{/* <PostList data={caseStudies} /> */}</Wrapper>
 
       <Wrapper width="thin">
-        <h1>I’m a journalist and storyteller.</h1>
+        <h2>I’m a journalist and storyteller.</h2>
       </Wrapper>
 
       <Wrapper noUpPad>{/* <PostList data={magazineFeatures} /> */}</Wrapper>

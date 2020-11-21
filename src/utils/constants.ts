@@ -5,16 +5,31 @@ export type TSiteProps = {
   description?: string
 }
 
+export type TImageFluid = {
+  id: string
+  fluid: FluidObject
+  description?: string
+  file: {
+    url: string
+  }
+}
+
 export type TCaseStudy = {
   id: string
+  title: string
+  workType: string
+  featuredImage: TImageFluid
+  workSamples: TImageFluid[]
   fields: {
     path: string
   }
-  title: string
-  workType: string
-  featuredImage: {
-    description: string
-    fluid: FluidObject
+  company: {
+    companyLogo: TImageFluid
+  }
+  content: {
+    childMarkdownRemark: {
+      html: string
+    }
   }
 }
 
@@ -22,9 +37,7 @@ export type TPublication = {
   id: string
   name: string
   publicationWebsite: string
-  publicationLogo: {
-    fluid: FluidObject
-  }
+  publicationLogo: TImageFluid
 }
 
 export type TContentfulData = {

@@ -71,7 +71,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.slug,
       component: path.resolve(`src/templates/page.tsx`),
-      context: {},
+      context: {
+        id: node.id
+      },
     })
   })
 
@@ -79,7 +81,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.fields.path,
       component: path.resolve(`src/templates/case-study.tsx`),
-      context: {},
+      context: {
+        id: node.id
+      },
     })
   })
 
@@ -87,7 +91,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.fields.path,
       component: path.resolve(`src/templates/article.tsx`),
-      context: {},
+      context: {
+        id: node.id
+      },
     })
   })
 }

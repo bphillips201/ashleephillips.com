@@ -7,7 +7,7 @@ import Wrapper from "../Wrapper/Wrapper"
 const Hero: React.FC = () => (
   <Wrapper className={styles.hero} noPadY={true}>
     <div className={styles.cta}>
-      <h1>Hi, my dudes</h1>
+      <h2>Hi, my dudes</h2>
       <p>
         I’m a content strategist living on the California central coast. I speak
         about digital accessbility and geek out over calligraphy and Bob’s

@@ -11,7 +11,7 @@ const About = () => (
       description="I was born in a small town and raised in a bookstore."
     />
     <Wrapper width="thin">
-      <h1>I was born in a small town and raised in a bookstore.</h1>
+      <h2>I was born in a small town and raised in a bookstore.</h2>
     </Wrapper>
 
     <Wrapper width="xthin" noUpPad>

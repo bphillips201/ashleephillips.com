@@ -2,36 +2,37 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/Layout/Layout"
-
-import styles from "../styles/modules/post.module.scss"
+import * as styles from "../styles/modules/post.module.scss"
 import SEO from "../components/seo"
 import Wrapper from "../components/Wrapper/Wrapper"
+import { TPageGlobals } from "../utils/constants"
 
-export default function Template({ data }) {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
-  const featuredImgFluid =
-    markdownRemark.frontmatter.featuredImage.childImageSharp.fluid
-  const companyLogoFluid =
-    markdownRemark.frontmatter.companyLogo.childImageSharp.fluid
+const CaseStudy: React.FC<TPageGlobals> = (props) => {
+  const {
+    title,
+    workType,
+    featuredImage,
+    company,
+    content,
+    workSamples,
+  } = props.data.contentfulCaseStudy
+
   return (
     <Layout>
-      <SEO title={`${frontmatter.title} | Case Study`} />
+      <SEO title={`${title} | Case Study`} />
       <Wrapper>
         <div className={styles.post}>
           <div className={styles.postHeader}>
             <div className={styles.featuredImage}>
-              <Img fluid={featuredImgFluid} alt={frontmatter.company} />
+              <Img fluid={featuredImage.fluid} />
             </div>
 
             <div className={styles.postMeta}>
-              <div className={styles.subTitle}>
-                Case Study &nbsp;|&nbsp; UX Writing
-              </div>
-              <h1 dangerouslySetInnerHTML={{ __html: frontmatter.title }} />
+              <div className={styles.subTitle}>{workType}</div>
+              <h1>{title}</h1>
 
               <div className={styles.companyLogo}>
-                <Img fluid={companyLogoFluid} />
+                <Img fluid={company.companyLogo.fluid} />
               </div>
             </div>
           </div>
@@ -39,8 +40,24 @@ export default function Template({ data }) {
           <Wrapper noPadX noUpPad width="xthin">
             <div
               className={styles.postContent}
-              dangerouslySetInnerHTML={{ __html: html }}
+              dangerouslySetInnerHTML={{
+                __html: content.childMarkdownRemark.html,
+              }}
             />
+          </Wrapper>
+
+          <Wrapper noPadY noPadX width="xthin">
+            {workSamples.map((img) => (
+              <a
+                className={styles.workSample}
+                key={img.id}
+                href={`https://${img.file.url}`}
+                target="_blank"
+              >
+                <Img fluid={img.fluid} alt={img.description} />
+              </a>
+            ))}
+            <small className={styles.sampleExpand}>Click to expand</small>
           </Wrapper>
         </div>
       </Wrapper>
@@ -48,27 +65,38 @@ export default function Template({ data }) {
   )
 }
 
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        title
-        company
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export default CaseStudy
+
+export const caseStudyQuery = graphql`
+  query($id: String!) {
+    contentfulCaseStudy(id: { eq: $id }) {
+      title
+      content {
+        childMarkdownRemark {
+          html
         }
+      }
+      workType
+      workSamples {
+        id
+        description
+        fluid(quality: 100, maxWidth: 1000) {
+          ...GatsbyContentfulFluid_tracedSVG
+        }
+        file {
+          url
+        }
+      }
+      featuredImage {
+        fluid(quality: 90, maxWidth: 800) {
+          ...GatsbyContentfulFluid_tracedSVG
+        }
+      }
+      company {
+        name
         companyLogo {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
+          fluid(quality: 100, maxWidth: 400) {
+            ...GatsbyContentfulFluid_tracedSVG
           }
         }
       }

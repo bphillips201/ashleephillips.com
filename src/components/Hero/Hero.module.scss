@@ -30,6 +30,12 @@
   z-index: 2;
   margin-right: $base4X;
 
+  h2 {
+    font-size: 4.8rem;
+    margin-bottom: 2.4rem;
+    margin-top: 0;
+  }
+
   &:after {
     content: "";
     position: absolute;

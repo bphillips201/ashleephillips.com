@@ -13,7 +13,7 @@ const PostList: React.FC<TPostListProps> = (props) => {
 
   return (
     <ul className={styles.postList}>
-      {data.map(post => (
+      {data.map((post) => (
         <li key={post.id} className={styles.postBlock}>
           <div>
             <Link
