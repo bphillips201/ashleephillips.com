@@ -5,7 +5,8 @@ import { TSiteProps } from '../../utils/constants'
 import * as styles from './Header.module.scss'
 
 const Header: React.FC<TSiteProps> = props => {
-  const isHome = location ? location.pathname === '/' : false
+  const isHome =
+    typeof location !== 'undefined' ? location.pathname === '/' : false
 
   return (
     <header className={styles.header}>
