@@ -14,12 +14,16 @@ export type TImageFluid = {
   }
 }
 
-export type TCaseStudy = {
+export type TContent = {
   id: string
+  name: string
+  headline: string
   title: string
   workType: string
   featuredImage: TImageFluid
   workSamples: TImageFluid[]
+  publicationWebsite: string
+  publicationLogo: TImageFluid
   fields: {
     path: string
   }
@@ -33,15 +37,8 @@ export type TCaseStudy = {
   }
 }
 
-export type TPublication = {
-  id: string
-  name: string
-  publicationWebsite: string
-  publicationLogo: TImageFluid
-}
-
 export type TContentfulData = {
-  [name: string]: TCaseStudy & TPublication
+  [name: string]: TContent
 }
 
 export type TAllContentfulData = {

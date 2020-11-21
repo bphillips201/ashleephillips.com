@@ -1,59 +1,44 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
 import Wrapper from "../components/Wrapper/Wrapper"
 import styles from "../styles/modules/page.module.scss"
+import { TPageGlobals } from "../utils/constants"
 
-const About = () => (
-  <Layout className={styles.page}>
-    <SEO
-      title="About"
-      description="I was born in a small town and raised in a bookstore."
-    />
-    <Wrapper width="thin">
-      <h2>I was born in a small town and raised in a bookstore.</h2>
-    </Wrapper>
+const Page: React.FC<TPageGlobals> = (props) => {
+  const { title, headline, content } = props.data.contentfulPage
 
-    <Wrapper width="xthin" noUpPad>
-      <p>
-        At twenty-five, I moved to the West Coast with my cat and husband in
-        tow. Now I hang my keys in San Luis Obispo, California, where I work
-        remotely as a content strategist at Facebook. These days, I'm my team’s
-        squeaky wheel, constantly asking, “How can we make this accessible?”
-      </p>
+  return (
+    <Layout className={styles.page}>
+      <SEO title={title} description={headline} />
+      <Wrapper width="thin">
+        <h2>{headline}</h2>
+      </Wrapper>
 
-      <ul className={styles.unstyledList}>
-        <li>
-          <a
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/ashleephillips/"
-            target="_blank"
-          >
-            View my LinkedIn profile
-          </a>
-        </li>
-        <li>
-          <a
-            rel="noopener noreferrer"
-            href="https://medium.com/@ashleeletters"
-            target="_blank"
-          >
-            Read my blog on Medium
-          </a>
-        </li>
+      <Wrapper width="xthin" noUpPad>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: content.childMarkdownRemark.html,
+          }}
+        />
+      </Wrapper>
+    </Layout>
+  )
+}
 
-        <li>
-          <a
-            rel="noopener noreferrer"
-            href="https://www.meetup.com/Central-Coast-UX-Writers-Meetup/"
-            target="_blank"
-          >
-            Join the Central Coast UX Writers meetup
-          </a>
-        </li>
-      </ul>
-    </Wrapper>
-  </Layout>
-)
+export default Page
 
-export default About
+export const pageQuery = graphql`
+  query($id: String!) {
+    contentfulPage(id: { eq: $id }) {
+      title
+      headline
+      content {
+        childMarkdownRemark {
+          html
+        }
+      }
+    }
+  }
+`
