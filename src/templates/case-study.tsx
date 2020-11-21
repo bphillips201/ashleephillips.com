@@ -1,13 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../components/Layout/Layout"
-import * as styles from "../styles/modules/post.module.scss"
-import SEO from "../components/seo"
-import Wrapper from "../components/Wrapper/Wrapper"
-import { TPageGlobals } from "../utils/constants"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Layout from '../components/Layout/Layout'
+import * as styles from '../styles/modules/post.module.scss'
+import SEO from '../components/SEO/SEO'
+import Wrapper from '../components/Wrapper/Wrapper'
+import { TPageGlobals } from '../utils/constants'
 
-const CaseStudy: React.FC<TPageGlobals> = (props) => {
+const CaseStudy: React.FC<TPageGlobals> = props => {
   const {
     title,
     workType,
@@ -28,7 +28,7 @@ const CaseStudy: React.FC<TPageGlobals> = (props) => {
             </div>
 
             <div className={styles.postMeta}>
-              <div className={styles.subTitle}>{workType}</div>
+              <div className={styles.subTitle}>{workType} / Content Design</div>
               <h1>{title}</h1>
 
               <div className={styles.companyLogo}>
@@ -47,7 +47,7 @@ const CaseStudy: React.FC<TPageGlobals> = (props) => {
           </Wrapper>
 
           <Wrapper noPadY noPadX width="xthin">
-            {workSamples.map((img) => (
+            {workSamples.map(img => (
               <a
                 className={styles.workSample}
                 key={img.id}

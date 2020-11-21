@@ -1,23 +1,22 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout/Layout'
+import SEO from '../components/SEO/SEO'
+import PostList from '../components/PostList/PostList'
+import SectionHeader from '../components/SectionHeader/SectionHeader'
+import Hero from '../components/Hero/Hero'
+import Wrapper from '../components/Wrapper/Wrapper'
+import { TPageGlobals } from '../utils/constants'
+import PublicationList from '../components/PublicationList/PublicationList'
 
-import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
-import PostList from "../components/PostList/PostList"
-import SectionHeader from "../components/SectionHeader/SectionHeader"
-import Hero from "../components/Hero/Hero"
-import Wrapper from "../components/Wrapper/Wrapper"
-import { TPageGlobals } from "../utils/constants"
-import PublicationList from "../components/PublicationList/PublicationList"
-
-const IndexPage: React.FC<TPageGlobals> = (props) => {
+const IndexPage: React.FC<TPageGlobals> = props => {
   const { allContentfulCaseStudy, allContentfulPublication } = props.data
-  const posts = allContentfulCaseStudy.edges.map((n) => n.node)
-  const publications = allContentfulPublication.edges.map((n) => n.node)
+  const posts = allContentfulCaseStudy.edges.map(n => n.node)
+  const publications = allContentfulPublication.edges.map(n => n.node)
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`ux writer`, `accessibility`, `speaker`]} />
+      <SEO title="Home" />
       <Hero />
       <Wrapper tall>
         <SectionHeader>Featured Work</SectionHeader>

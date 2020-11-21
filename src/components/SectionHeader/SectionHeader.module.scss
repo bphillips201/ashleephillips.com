@@ -1,16 +1,16 @@
-@import "../../styles/partials/variables.scss";
+@import '../../styles/partials/variables.scss';
 
 .sectionHeader {
   @include alt-font(5);
   text-align: center;
-  font-size: 28px;
+  font-size: 2.8rem;
   margin-top: 0;
   margin-bottom: $base3X * 2;
   position: relative;
 
   &:before,
   &:after {
-    content: "•••";
+    content: '•••';
     color: var(--color-red);
     display: inline-block;
   }
@@ -24,8 +24,7 @@
   }
 
   @media screen and (max-width: 540px) {
-    font-size: 24px;
-    margin-bottom: $base2X;
+    font-size: 2.4rem;
 
     &:before {
       position: absolute;

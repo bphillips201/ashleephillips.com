@@ -49,6 +49,7 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: $base4X;
   align-items: center;
+  margin-bottom: $base4X * 2;
 }
 
 .postMeta {
@@ -102,7 +103,7 @@
   h4,
   h5,
   h6 {
-    margin-top: $base3X * 3;
+    margin-top: $base3X * 2;
     margin-bottom: 0;
     font-family: $fonts-base;
     font-weight: 600;
@@ -110,14 +111,18 @@
 }
 
 .magazineFeaturedImage {
-  display: flex;
   align-items: center;
   max-height: 480px;
   margin-bottom: $base;
   overflow: hidden;
+  transition: max-height 300ms ease;
 
-  :global .gatsby-image-wrapper {
-    width: 100%;
+  @media screen and (min-width: 1080px) {
+    max-height: 640px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-height: 800px;
   }
 }
 

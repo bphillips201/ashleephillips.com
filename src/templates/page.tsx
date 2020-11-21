@@ -1,12 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
-import Wrapper from "../components/Wrapper/Wrapper"
-import styles from "../styles/modules/page.module.scss"
-import { TPageGlobals } from "../utils/constants"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout/Layout'
+import SEO from '../components/SEO/SEO'
+import Wrapper from '../components/Wrapper/Wrapper'
+import styles from '../styles/modules/page.module.scss'
+import { TPageGlobals } from '../utils/constants'
 
-const Page: React.FC<TPageGlobals> = (props) => {
+const Page: React.FC<TPageGlobals> = props => {
   const { title, headline, content } = props.data.contentfulPage
 
   return (

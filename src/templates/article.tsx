@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/Layout/Layout'
 import Wrapper from '../components/Wrapper/Wrapper'
 import * as styles from '../styles/modules/post.module.scss'
-import SEO from '../components/seo'
+import SEO from '../components/SEO/SEO'
 import { TPageGlobals } from '../utils/constants'
 
 const Article: React.FC<TPageGlobals> = props => {
@@ -69,7 +69,7 @@ export const articleQuery = graphql`
         }
       }
       featuredImage {
-        fluid(quality: 70, maxWidth: 1200, cropFocus: CENTER) {
+        fluid(quality: 80, maxWidth: 1200) {
           ...GatsbyContentfulFluid_tracedSVG
         }
       }

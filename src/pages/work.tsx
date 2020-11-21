@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/seo'
+import SEO from '../components/SEO/SEO'
 import Wrapper from '../components/Wrapper/Wrapper'
 import { TPageGlobals } from '../utils/constants'
 import PostList from '../components/PostList/PostList'
@@ -40,7 +40,7 @@ const Work: React.FC<TPageGlobals> = props => {
 
 export default Work
 
-export const workQuery = graphql`
+export const workPageQuery = graphql`
   query {
     allContentfulCaseStudy(sort: { fields: publishDate, order: DESC }) {
       edges {
@@ -53,12 +53,7 @@ export const workQuery = graphql`
           workType
           featuredImage {
             description
-            fluid(
-              quality: 100
-              maxWidth: 640
-              maxHeight: 480
-              cropFocus: CENTER
-            ) {
+            fluid(quality: 100, maxWidth: 640, maxHeight: 480) {
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
@@ -78,12 +73,7 @@ export const workQuery = graphql`
           }
           featuredImage {
             description
-            fluid(
-              quality: 100
-              maxWidth: 640
-              maxHeight: 480
-              cropFocus: CENTER
-            ) {
+            fluid(quality: 100, maxWidth: 640, maxHeight: 480) {
               ...GatsbyContentfulFluid_tracedSVG
             }
           }

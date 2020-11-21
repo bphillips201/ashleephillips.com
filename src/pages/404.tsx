@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
-import { Link } from "gatsby"
+import React from 'react'
+import Layout from '../components/Layout/Layout'
+import SEO from '../components/SEO/SEO'
+import { Link } from 'gatsby'
 
-import styles from "../styles/modules/page.module.scss"
+import styles from '../styles/modules/page.module.scss'
 
 const NotFoundPage = () => (
   <Layout>
