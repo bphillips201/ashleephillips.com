@@ -6,6 +6,16 @@ module.exports = {
     description: `Content Designer and Speaker`,
     author: `@ashleeletters`,
     siteUrl: `https://ashleephillips.com`,
+    menuLinks: [
+      {
+        name: 'About',
+        path: '/about',
+      },
+      {
+        name: 'Work',
+        path: '/work',
+      },
+    ],
   },
   plugins: [
     `gatsby-transformer-remark`,

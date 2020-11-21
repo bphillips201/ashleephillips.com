@@ -34,9 +34,12 @@ const CaseStudy: React.FC<TPageGlobals> = props => {
               <div className={styles.subTitle}>{workType} / Content Design</div>
               <h1>{title}</h1>
 
-              <div className={styles.companyLogo}>
-                <Img fluid={company.companyLogo.fluid} />
-              </div>
+              <h2
+                className={styles.companyLogo}
+                title={`Content Design work for ${company.name}`}
+              >
+                <Img fluid={company.companyLogo.fluid} alt={company.name} />
+              </h2>
             </div>
           </div>
 

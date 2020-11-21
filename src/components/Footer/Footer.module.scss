@@ -1,10 +1,11 @@
-@import "../../styles/partials/variables.scss";
+@import '../../styles/partials/variables.scss';
 
 .footer {
   text-align: center;
   padding: ($base4X * 2) 0;
 
-  svg {
+  a {
+    display: inline-block;
     margin-bottom: $base4X;
   }
 }
