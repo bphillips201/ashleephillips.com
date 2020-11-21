@@ -1,0 +1,66 @@
+@import '../../styles/partials/variables.scss';
+
+.nav {
+  margin: auto;
+
+  @media screen and (max-width: 640px) {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: -66px; // logo offset
+    text-align: center;
+
+    @media screen and (max-width: 640px) {
+      text-align: right;
+      margin-left: 0;
+    }
+  }
+
+  li {
+    margin: 0 $base2X;
+
+    @media screen and (max-width: 640px) {
+      margin: 0 ($base / 2);
+    }
+  }
+
+  h1,
+  a {
+    @include alt-font(1);
+    color: var(--color-black);
+    padding: $base;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+  }
+
+  a {
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -$base;
+      left: 50%;
+      height: 3px;
+      background: var(--color-red);
+      width: 0;
+      transition: left ease 200ms, width ease 200ms;
+    }
+
+    &:hover:after {
+      width: 110%;
+      left: -5%;
+    }
+  }
+
+  .active:after {
+    width: 110%;
+    left: -5%;
+  }
+}

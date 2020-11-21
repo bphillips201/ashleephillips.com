@@ -1,0 +1,33 @@
+@import "../../styles/partials/variables.scss";
+
+.linkButton {
+  @include alt-font(1);
+  text-decoration: none;
+  padding: $base2X $base4X;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
+
+.secondary {
+  background-color: white;
+  color: var(--color-black);
+  border: 2px solid var(--color-black);
+
+  &:hover {
+    background-color: darken(white, 5%);
+  }
+}
+
+.primary {
+  background-color: var(--color-red);
+  color: white;
+  border-color: var(--color-red);
+
+  &:hover {
+    background-color: var(--color-red-dark);
+  }
+}

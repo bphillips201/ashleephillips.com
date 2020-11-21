@@ -1,0 +1,23 @@
+@import '../../styles/partials/variables.scss';
+
+.footer {
+  text-align: center;
+  padding: ($base4X * 2) 0;
+
+  a {
+    display: inline-block;
+    margin-bottom: $base4X;
+  }
+}
+
+.copyright {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.tracking {
+  color: #555;
+  font-size: 12px;
+}

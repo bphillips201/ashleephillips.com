@@ -1,0 +1,44 @@
+@import '../../styles/partials/variables.scss';
+
+.sectionHeader {
+  @include alt-font(5);
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 0;
+  margin-bottom: $base3X * 2;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '•••';
+    color: var(--color-red);
+    display: inline-block;
+  }
+
+  &:before {
+    margin-right: $base;
+  }
+
+  &:after {
+    margin-left: $base;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 2.4rem;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: -$base4X;
+      margin-left: -1em;
+      display: none;
+    }
+
+    &:after {
+      position: absolute;
+      left: 50%;
+      bottom: $base4X;
+      margin-left: -1em;
+    }
+  }
+}

@@ -1,23 +1,14 @@
-@import "../partials/variables";
+@import '../partials/variables';
 
 .page {
-  h1 {
-    font-size: 42px;
+  h2 {
+    font-size: 4rem;
     text-align: center;
     line-height: 1.6;
-    margin-bottom: $base2X * 5;
+    margin-bottom: 0;
 
     @media screen and (max-width: 640px) {
       font-size: 32px;
     }
   }
-
-  p {
-    line-height: 1.7;
-  }
-}
-
-.unstyledList {
-  list-style-type: none;
-  margin-left: 0;
 }

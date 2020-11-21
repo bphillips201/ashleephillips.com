@@ -1,34 +1,33 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: `Ashlee Phillips`,
-    description: `UX Writer and Speaker`,
-    author: `Ashlee Phillips`,
+    description: `Content Designer and Speaker`,
+    author: `@ashleeletters`,
+    siteUrl: `https://ashleephillips.com`,
+    menuLinks: [
+      {
+        name: 'About',
+        path: '/about',
+      },
+      {
+        name: 'Work',
+        path: '/work',
+      },
+    ],
   },
   plugins: [
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-remark-copy-linked-files`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-copy-linked-files`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200,
-            },
-          },
-        ],
       },
     },
     {
@@ -60,22 +59,23 @@ module.exports = {
             },
             {
               family: `Source Sans Pro`,
-              variants: [`400`, `700`, `400i`, `700i`],
+              variants: [`400`, `600`, `400i`, `600i`],
             },
             {
               family: `Poppins`,
-              variants: [`700`],
+              variants: [`600`],
             },
           ],
         },
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: `gatsby-source-contentful`,
       options: {
-        rule: {
-          include: /images/,
-        },
+        spaceId: `j1sm348czbc7`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        downloadLocal: true,
+        environment: 'master',
       },
     },
     {

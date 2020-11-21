@@ -1,0 +1,52 @@
+@import "../../styles/partials/variables.scss";
+
+.wrapper {
+  padding-top: $base4X;
+  padding-bottom: $base4X;
+
+  &.tall {
+    padding-top: ($base4X * 3);
+    padding-bottom: ($base4X * 3);
+  }
+
+  &.tinted {
+    background-color: var(--color-brown-light);
+  }
+
+  &.noPadY {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.noUpPad {
+    padding-top: 0;
+  }
+
+  &.noDownPad {
+    padding-bottom: 0;
+  }
+}
+
+.chunk {
+  padding-left: $base3X;
+  padding-right: $base3X;
+  margin: 0 auto;
+  position: relative;
+
+  &.default {
+    max-width: $wrapper-width;
+  }
+
+  &.thin {
+    max-width: $wrapper-thin-width;
+  }
+
+  &.xthin {
+    max-width: $wrapper-xthin-width;
+  }
+
+  &.noPadX {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
