@@ -9,9 +9,8 @@ const Hero: React.FC = () => (
     <div className={styles.cta}>
       <h2>Hi, my dudes</h2>
       <p>
-        I’m a UX content designer living on the California central coast. I
-        speak about digital accessbility and geek out over calligraphy and Bob’s
-        Burgers.
+        I’m a UX content designer living in New York City. I speak about digital
+        accessibility and geek out over calligraphy and Bob’s Burgers.
       </p>
       <LinkButton to="/work" title="View my work" template="primary">
         View my work
